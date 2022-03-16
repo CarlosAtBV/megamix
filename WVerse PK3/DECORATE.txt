@@ -27,3 +27,22 @@ ACTOR IsMel : Inventory
 {
 	Inventory.MaxAmount 1
 }
+
+// Weapon sprites are like such!
+// 1111A0
+// ^ Character (1 for Diaz, 2 for Hernandez, 3 for Mel)
+//  ^ Slot
+//   ^ Weapon
+//    ^ Action
+
+// Weapon Select Memory was adapted from mk-ww, by WildWeasel and Cardboard Marty
+// This makes things less clustered for the select state on weapons
+
+ACTOR WeaponSelectMemory : Inventory
+{
+	// Mel Weapons
+	// 310 = Trait
+	// 311 = Bare Knuckle
+	// 321 = 919M
+	Inventory.MaxAmount 999
+}
