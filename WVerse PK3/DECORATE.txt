@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////////
+
+Actor Boolean : Inventory
+{
+	Inventory.MaxAmount 1
+	+UNDROPPABLE
+	-INVBAR
+}
+
+//Melee Button Press
+Actor MeleePressed : Boolean {}
+Actor TraitPressed : Boolean {}
+Actor TauntPressed : Boolean {}
+Actor PlayingPickupSound : Boolean {}
+
+ACTOR IsDiaz : Inventory
+{
+	Inventory.MaxAmount 1
+}
+
+ACTOR IsHernandez : Inventory
+{
+	Inventory.MaxAmount 1
+}
+
+ACTOR IsMel : Inventory
+{
+	Inventory.MaxAmount 1
+}

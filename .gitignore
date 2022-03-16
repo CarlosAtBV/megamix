@@ -1,0 +1,8 @@
+*.backup1
+*.backup2
+*.backup3
+*.blend[0-9]
+*.sfl
+*.sfk
+*.log
+*.pk3
