@@ -1,4 +1,4 @@
-Class Abysm_EnemyHandler_Freezer : Thinker
+Class WVerse_EnemyHandler_Freezer : Thinker
 {
 	int timeleft;
 	Vector3 oldPos;

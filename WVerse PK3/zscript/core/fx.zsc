@@ -1,4 +1,4 @@
-Class Abysm_HitSpark_Shine : Actor
+Class WVerse_HitSpark_Shine : Actor
 {
 	Default
 	{
@@ -26,7 +26,7 @@ Class Abysm_HitSpark_Shine : Actor
 	}
 }
 
-Class Abysm_HitSpark_Wave : Actor
+Class WVerse_HitSpark_Wave : Actor
 {
 	Default
 	{
