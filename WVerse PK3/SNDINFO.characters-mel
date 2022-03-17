@@ -1,0 +1,143 @@
+////////////////////////////
+// Mel (Retro) Player Sounds
+////////////////////////////
+
+$playeralias	Mel      male  	*pain100			mel/pain100
+$playeralias	Mel      male  	*pain75				mel/pain75
+$playeralias	Mel      male  	*pain50				mel/pain50
+$playeralias	Mel      male  	*pain25				mel/pain25
+$playeralias	Mel	  male  	*death				mel/death
+$playeralias	Mel      male  	*xdeath				mel/xdeath
+$playeralias	Mel      male  	*gibbed				mel/xdeath
+$playeralias	Mel      male  	*grunt				mel/land
+$playeralias	Mel	  male  	*jump				mel/jump
+$playeralias    Mel	  male      *land				mel/landing
+$playeralias    Mel	  male      *usefail			mel/usefail
+$playeralias	Mel   	  male  	*smallmelee			mel/smallmelee
+$playeralias	Mel      male  	*mediummelee		mel/smallmelee
+$playeralias	Mel   	  male  	*largemelee         mel/largemelee
+$playeralias	Mel   	  male  	*xlmelee			mel/largemelee
+
+$playeralias	Mel   	 male  		*maggrapple			maggrappleretro
+$playeralias	Mel   	 male  		*magsling			magslingretro
+$playeralias	Mel   	 male  		*magdrive			magdriveretro
+
+$random mel/pain100 { mel/pain1001 mel/pain1002 mel/pain1003 mel/pain1004 }
+mel/pain1001 "sounds/characters/mel/vo_mel_pain100-1.ogg"
+mel/pain1002 "sounds/characters/mel/vo_mel_pain100-2.ogg"
+mel/pain1003 "sounds/characters/mel/vo_mel_pain100-3.ogg"
+mel/pain1004 "sounds/characters/mel/vo_mel_pain100-4.ogg"
+
+$random mel/pain75 { mel/pain751 mel/pain752 mel/pain753 mel/pain754 }
+mel/pain751 "sounds/characters/mel/vo_mel_pain75-1.ogg"
+mel/pain752 "sounds/characters/mel/vo_mel_pain75-2.ogg"
+mel/pain753 "sounds/characters/mel/vo_mel_pain75-3.ogg"
+mel/pain754 "sounds/characters/mel/vo_mel_pain75-4.ogg"
+
+$random mel/pain50 { mel/pain501 mel/pain502 mel/pain503 mel/pain504 }
+mel/pain501 "sounds/characters/mel/vo_mel_pain50-1.ogg"
+mel/pain502 "sounds/characters/mel/vo_mel_pain50-2.ogg"
+mel/pain503 "sounds/characters/mel/vo_mel_pain50-3.ogg"
+mel/pain504 "sounds/characters/mel/vo_mel_pain50-4.ogg"
+
+$random mel/pain25 { mel/pain251 mel/pain252 mel/pain253 mel/pain254 }
+mel/pain251 "sounds/characters/mel/vo_mel_pain25-1.ogg"
+mel/pain252 "sounds/characters/mel/vo_mel_pain25-2.ogg"
+mel/pain253 "sounds/characters/mel/vo_mel_pain25-3.ogg"
+mel/pain254 "sounds/characters/mel/vo_mel_pain25-4.ogg"
+
+$random mel/death { mel/death01 mel/death02 }
+mel/death01 "sounds/characters/mel/vo_mel_death_normal01.ogg"
+mel/death02 "sounds/characters/mel/vo_mel_death_normal02.ogg"
+
+$random mel/xdeath { mel/xdeath01 mel/xdeath02 }
+mel/xdeath01 "sounds/characters/mel/vo_mel_death_xdeath01.ogg"
+mel/xdeath02 "sounds/characters/mel/vo_mel_death_xdeath01.ogg"
+$volume mel/xdeath 0.7
+
+
+$random mel/jump { mel/jump01 mel/jump02 null null null null }
+mel/jump01 "sounds/characters/mel/vo_mel_jump01.ogg"
+mel/jump02 "sounds/characters/mel/vo_mel_jump02.ogg"
+
+$random mel/land { mel/land1 mel/land2 mel/land3 }
+mel/land1 "sounds/characters/mel/vo_mel_land1.ogg"
+mel/land2 "sounds/characters/mel/vo_mel_land2.ogg"
+mel/land3 "sounds/characters/mel/vo_mel_land3.ogg"
+
+$random mel/usefail { mel/unf1 mel/unf2 }
+mel/unf1 "sounds/characters/mel/vo_mel_usefail1.ogg"
+mel/unf2 "sounds/characters/mel/vo_mel_usefail2.ogg"
+
+//////////////////
+// Mel's Melee
+//////////////////
+
+$random mel/smallmelee  { mel/smallmelee1 mel/smallmelee2 mel/smallmelee3 mel/smallmelee4 mel/smallmelee5 mel/smallmelee6 null null null null null null null null null null null null null }
+mel/smallmelee1 "sounds/characters/mel/melee/vo_mel_melee_sm01.ogg"
+mel/smallmelee2 "sounds/characters/mel/melee/vo_mel_melee_sm02.ogg"
+mel/smallmelee3 "sounds/characters/mel/melee/vo_mel_melee_sm03.ogg"
+mel/smallmelee4 "sounds/characters/mel/melee/vo_mel_melee_sm04.ogg"
+mel/smallmelee5 "sounds/characters/mel/melee/vo_mel_melee_sm05.ogg"
+mel/smallmelee6 "sounds/characters/mel/melee/vo_mel_melee_sm06.ogg"
+
+$random mel/largemelee { mel/largemelee1 mel/largemelee2 mel/largemelee3 mel/largemelee4 mel/largemelee5 mel/largemelee6 null null null null null null null null null null }
+mel/largemelee1 "sounds/characters/mel/melee/vo_mel_melee_lg01.ogg"
+mel/largemelee2 "sounds/characters/mel/melee/vo_mel_melee_lg02.ogg"
+mel/largemelee3 "sounds/characters/mel/melee/vo_mel_melee_lg03.ogg"
+mel/largemelee4 "sounds/characters/mel/melee/vo_mel_melee_lg04.ogg"
+mel/largemelee5 "sounds/characters/mel/melee/vo_mel_melee_lg05.ogg"
+mel/largemelee6 "sounds/characters/mel/melee/vo_mel_melee_lg06.ogg"
+
+////////////////////
+//Mel's Pickup Lines
+////////////////////
+
+$playeralias	Mel   	  male  	*persephonepickup			mel/persephonepickup
+$playeralias	Mel   	  male  	*919mpickup					mel/919mpickup
+$playeralias	Mel   	  male  	*shotgunpickup				mel/shotgunpickup
+$playeralias	Mel   	  male  	*dahliapickup				mel/dahliapickup
+$playeralias	Mel   	  male  	*ab50pickup					mel/ab50pickup
+$playeralias	Mel   	  male  	*mp40pickup					mel/mp40pickup
+$playeralias	Mel   	  male  	*toolboxpickup				mel/toolboxpickup
+$playeralias	Mel   	  male  	*adranospickup				mel/adranospickup
+$playeralias	Mel   	  male  	*plasmapickup				mel/plasmapickup
+
+// PERSEPHONE
+$random mel/persephonepickup { mel/persephonepickup01 mel/persephonepickup02 mel/persephonepickup03 mel/persephonepickup04 }
+mel/persephonepickup01 "sounds/characters/mel/weaponpickups/vo_mel_pickup_persephone01.ogg"
+mel/persephonepickup02 "sounds/characters/mel/weaponpickups/vo_mel_pickup_persephone02.ogg"
+mel/persephonepickup03 "sounds/characters/mel/weaponpickups/vo_mel_pickup_persephone03.ogg"
+mel/persephonepickup04 "sounds/characters/mel/weaponpickups/vo_mel_pickup_persephone04.ogg"
+
+// 919M
+mel/919mpickup "sounds/characters/mel/weaponpickups/vo_mel_pickup_919m.ogg"
+
+// SHOTGUN
+mel/shotgunpickup "sounds/characters/mel/weaponpickups/vo_mel_pickup_shotgun.ogg"
+
+// DAHLIA
+mel/dahliapickup "sounds/characters/mel/weaponpickups/vo_mel_pickup_dahlia.ogg"
+
+// AB50
+mel/ab50pickup "sounds/characters/mel/weaponpickups/vo_mel_pickup_ab50.ogg"
+
+// MP40
+mel/mp40pickup "sounds/characters/mel/weaponpickups/vo_mel_pickup_mp40.ogg"
+
+// TOOLBOX
+$random mel/toolboxpickup { mel/toolboxpickup01 mel/toolboxpickup02 }
+mel/toolboxpickup01 "sounds/characters/mel/weaponpickups/vo_mel_pickup_toolbox01.ogg"
+mel/toolboxpickup02 "sounds/characters/mel/weaponpickups/vo_mel_pickup_toolbox02.ogg"
+
+// ADRANOS
+$random mel/adranospickup { mel/adranospickup01 mel/adranospickup02 }
+mel/adranospickup01 "sounds/characters/mel/weaponpickups/vo_mel_pickup_adranos01.ogg"
+mel/adranospickup02 "sounds/characters/mel/weaponpickups/vo_mel_pickup_adranos02.ogg"
+
+// PLASMA
+$random mel/plasmapickup { mel/plasmapickup01 mel/plasmapickup02 mel/plasmapickup03 mel/plasmapickup04 }
+mel/plasmapickup01 "sounds/characters/mel/weaponpickups/vo_mel_pickup_plasma01.ogg"
+mel/plasmapickup02 "sounds/characters/mel/weaponpickups/vo_mel_pickup_plasma02.ogg"
+mel/plasmapickup03 "sounds/characters/mel/weaponpickups/vo_mel_pickup_plasma03.ogg"
+mel/plasmapickup04 "sounds/characters/mel/weaponpickups/vo_mel_pickup_plasma04.ogg"
