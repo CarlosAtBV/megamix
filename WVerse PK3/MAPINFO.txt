@@ -1,4 +1,4 @@
 gameinfo
 {
-	playerclasses="DiazPlayer", "HernandezPlayer", "MelPlayer"
+	playerclasses = "WVerse_MelPlayer"
 }

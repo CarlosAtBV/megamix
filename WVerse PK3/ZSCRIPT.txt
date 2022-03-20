@@ -3,6 +3,6 @@ version 4.2.4
 // WEAPONS
 
 // CORE
-#include "zscript/weapons/fx.zsc"
-#include "zscript/weapons/melee.zsc"
-#include "zscript/weapons/thinkers.zsc"
+#include "zscript/core/fx.zsc"
+#include "zscript/core/melee.zsc"
+#include "zscript/core/thinkers.zsc"

@@ -29,7 +29,7 @@ Class WVerse_Weapon_Core : DoomWeapon
 	==========================================================================
 	*/
 	
-	action Array<Actor> A_WVerse_Melee(int mDamage, int mRange = 72, string mPuff = "BulletPuff", int flags = 0 int mStunTime = 5, int mMaxAngle = 45, int mMaxPitch = 45)
+	action Array<Actor> A_WVerse_Melee(int mDamage, int mRange = 72, string mPuff = "BulletPuff", int flags = 0, int mStunTime = 5, int mMaxAngle = 45, int mMaxPitch = 45)
 	{
 		Array<Actor> hit_fellas;
 		hit_fellas.clear();
