@@ -29,8 +29,11 @@ Class WVerse_Weapon_Core : DoomWeapon
 	==========================================================================
 	*/
 	
-	action Array<Actor> A_WVerse_Melee(int mDamage, int mRange = 72, string mPuff = "BulletPuff", int flags = 0, int mStunTime = 5, int mMaxAngle = 45, int mMaxPitch = 45)
+	action bool A_WVerse_Melee(int mDamage, int mRange = 72, string mPuff = "BulletPuff", int flags = 0, int mStunTime = 5, int mMaxAngle = 45, int mMaxPitch = 45)
 	{
+		bool hasHit;
+		bool hasKilled;
+		
 		Array<Actor> hit_fellas;
 		hit_fellas.clear();
 		Array<Actor> freeze_fellas;
@@ -73,12 +76,18 @@ Class WVerse_Weapon_Core : DoomWeapon
 				}
 				mo.A_PlaySound(bulletPuffToSpawn_sound, CHAN_BODY);
 				
+				if ( mo.Health <= 0 )
+				{
+					hasKilled = true;
+				}
+				
 				hit_fellas.Push(mo);
 			}
 		}
 		
 		if ( hit_fellas.Size() > 0 )
 		{
+			hasHit = true;
 			A_SetTics(mStunTime);
 		
 			for ( int i = 0; i < freeze_fellas.Size(); i++ )
@@ -94,7 +103,12 @@ Class WVerse_Weapon_Core : DoomWeapon
 		{
 			A_FireBullets(0, 0, 1, 0, mPuff, 0, mRange);
 		}
+			
+		if ( hasKilled )
+		{
+			invoker.owner.A_StartSound("misc/meleekill", CHAN_BODY, CHANF_OVERLAP);
+		}
 		
-		return hit_fellas;
+		return hasHit;
 	}
 }
