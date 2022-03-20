@@ -23,9 +23,6 @@ Class WVerse_Weapon_Core : DoomWeapon
 			Enemies within this angle are hit
 		mMaxPitch (int)
 			does nothing atm LMAo fuck u!!!
-		
-	Returns:
-		Array of fellas that are hit
 	==========================================================================
 	*/
 	
