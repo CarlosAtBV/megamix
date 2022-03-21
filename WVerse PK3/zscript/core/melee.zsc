@@ -44,7 +44,7 @@ Class WVerse_Weapon_Core : DoomWeapon
 		
 		while ( get_fellas.Next() )
 		{
-			mo = Actor(MonsterFinder.thing);
+			mo = Actor(get_fellas.thing);
 			
 			if ( mo == invoker.owner ) continue;
 			
@@ -71,7 +71,7 @@ Class WVerse_Weapon_Core : DoomWeapon
 						blood.vel = (frandom(-2,2),frandom(-2,2),frandom(2,6));
 					}
 				}
-				mo.A_PlaySound(bulletPuffToSpawn_sound, CHAN_BODY);
+				mo.A_PlaySound(bulletPuffToSpawn.SpawnSound, CHAN_BODY);
 				
 				if ( mo.Health <= 0 )
 				{
