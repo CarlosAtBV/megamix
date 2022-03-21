@@ -4,6 +4,63 @@
 
 Class WVerse_Weapon_Core : DoomWeapon
 {
+	int wv_curclip;
+	int wv_clipsize;
+	
+	Property ClipSize : wv_clipsize;
+	
+	Default
+	{
+		WVerse_Weapon_Core.ClipSize 16;
+	}
+	
+	bool canReload()
+	{
+		return ( owner.CountInv(ammo1.GetClass()) > 0 );
+	}
+	
+	/*
+	==========================================================================
+	A_WVerse_CheckReload
+		
+	Returns:
+		Nothing technically. It just jumps to the reload state.
+	==========================================================================
+	*/
+	
+	action state A_WVerse_CheckReload()
+	{
+		if ( wv_curclip < invoker.ammouse1 )
+		{
+			if ( canReload() )
+			{
+				return resolveState("Reload");
+			}
+		}
+		return resolveState(null);
+	}
+	
+	/*
+	==========================================================================
+	A_WVerse_ReloadAmmo
+		
+	Parameters:
+		amt (int)
+			Amount of ammo to reload when this action is called. Anything below 1 will reload as much as possible in one call, like when you're chuckin' a clip into the gun.
+	==========================================================================
+	*/
+	
+	action void A_WVerse_ReloadAmmo(int amt = 0)
+	{
+		bool chuckItIn = ( amt < 1 );
+		while ( ( chuckItIn || amt > 0 ) invoker.wv_curclip < invoker.GetClipCapacity() && invoker.canReload() )
+		{
+			amt--;
+			invoker.wv_curclip++;
+			invoker.owner.TakeInventory(invoker.ammo1.GetClass(), 1);
+		}
+	}
+	
 	/*
 	==========================================================================
 	A_WVerse_Melee
