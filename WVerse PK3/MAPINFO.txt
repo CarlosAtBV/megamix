@@ -1,4 +1,72 @@
 gameinfo
 {
-	playerclasses = "WVerse_DiazPlayer", "WVerse_HernandezPlayer", "WVerse_MelPlayer"
+	PlayerClasses = "WVerse_DiazPlayer", "WVerse_HernandezPlayer", "WVerse_MelPlayer"
+}
+
+episode test
+{
+   name = "training"
+   key = "T"
+}
+
+clearskills
+
+skill WVerseCasual
+{
+	PlayerClassName = "Hernandez", "Mostly Harmless"
+	PlayerClassName = "Diaz", "One-Armed Boxer"
+	PlayerClassName = "Crosswell", "Easy Peasy"
+		SpawnFilter = Baby
+		ACSReturn = 0
+		Key = "1"
+		DamageFactor = 0.5
+		EasyBossBrain
+		MonsterHealth = 0.5
+}
+
+skill WVerseNormal
+{
+	PlayerClassName = "Hernandez", "Snow Crash"
+	PlayerClassName = "Diaz", "Assault on Precinct 13"
+	PlayerClassName = "Crosswell", "Bring It On"
+		DefaultSkill
+		SpawnFilter = Normal
+		ACSReturn = 1
+		Key = "2"
+}
+
+skill WVerseHard
+{
+	PlayerClassName = "Hernandez", "Neuromancer"
+	PlayerClassName = "Diaz", "On Deadly Ground"
+	PlayerClassName = "Crosswell", "High Intensity"
+		SpawnFilter = Hard
+		ACSReturn = 2
+		Key = "3"
+}
+
+skill WVerseExtreme
+{
+	PlayerClassName = "Hernandez", "Blade Runner"
+	PlayerClassName = "Diaz", "Reservoir Dogs"
+	PlayerClassName = "Crosswell", "Blood N' Bone"
+		SpawnFilter = Hard
+		ACSReturn = 3
+		Key = "4"
+		Aggressiveness = 0.5
+		InstantReaction
+		MonsterHealth =  1.5
+}
+
+skill WVerseUltimate
+{
+	name = "Into the Abyss"
+		SpawnFilter = Hard
+		ACSReturn = 3
+		Key = "4"
+		Aggressiveness = 1.0
+		DamageFactor = 2.0
+		InstantReaction
+		MonsterHealth =  2.0
+		NoInfighting
 }
