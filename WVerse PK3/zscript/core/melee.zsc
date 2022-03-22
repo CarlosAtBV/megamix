@@ -30,9 +30,9 @@ Class WVerse_Weapon_Core : DoomWeapon
 	
 	action state A_WVerse_CheckReload()
 	{
-		if ( wv_curclip < invoker.ammouse1 )
+		if ( invoker.wv_curclip < invoker.ammouse1 )
 		{
-			if ( canReload() )
+			if ( invoker.canReload() )
 			{
 				return resolveState("Reload");
 			}
@@ -53,7 +53,7 @@ Class WVerse_Weapon_Core : DoomWeapon
 	action void A_WVerse_ReloadAmmo(int amt = 0)
 	{
 		bool chuckItIn = ( amt < 1 );
-		while ( ( chuckItIn || amt > 0 ) && invoker.wv_curclip < invoker.GetClipCapacity() && invoker.canReload() )
+		while ( ( chuckItIn || amt > 0 ) && invoker.wv_curclip < invoker.wv_clipsize && invoker.canReload() )
 		{
 			amt--;
 			invoker.wv_curclip++;
@@ -128,7 +128,7 @@ Class WVerse_Weapon_Core : DoomWeapon
 						blood.vel = (frandom(-2,2),frandom(-2,2),frandom(2,6));
 					}
 				}
-				mo.A_PlaySound(bulletPuffToSpawn.SpawnSound, CHAN_BODY);
+				mo.A_PlaySound(GetDefaultByType(bulletPuffToSpawn).SeeSound, CHAN_BODY);
 				
 				if ( mo.Health <= 0 )
 				{
