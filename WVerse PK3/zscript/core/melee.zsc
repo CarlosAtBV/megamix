@@ -53,7 +53,7 @@ Class WVerse_Weapon_Core : DoomWeapon
 	action void A_WVerse_ReloadAmmo(int amt = 0)
 	{
 		bool chuckItIn = ( amt < 1 );
-		while ( ( chuckItIn || amt > 0 ) invoker.wv_curclip < invoker.GetClipCapacity() && invoker.canReload() )
+		while ( ( chuckItIn || amt > 0 ) && invoker.wv_curclip < invoker.GetClipCapacity() && invoker.canReload() )
 		{
 			amt--;
 			invoker.wv_curclip++;
