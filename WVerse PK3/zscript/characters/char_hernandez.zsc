@@ -1,4 +1,4 @@
-Class WVerse_MelPlayer : PlayerPawn
+Class WVerse_HernandezPlayer : PlayerPawn
 {
 	Default
 	{
@@ -6,9 +6,9 @@ Class WVerse_MelPlayer : PlayerPawn
 		Player.AttackZOffset 20;
 		Player.JumpZ 9.0;
 		//Player.StartItem "MeleeButtonActor", 1;
-		Player.StartItem "IsMel", 1;	
-		Player.SoundClass "Mel";
-		Player.DisplayName "Crosswell";
+		Player.StartItem "IsHernandez", 1;	
+		Player.SoundClass "Hernandez";
+		Player.DisplayName "Hernandez";
 		//Player.Face "MC1";
 		//Player.Portrait "CSS_MELP";
 		//Player.WeaponSlot 1, "MelChargeStyle", "MelBareKnuckle";

@@ -1,5 +1,10 @@
 version 4.2.4
 
+// CHARACTERS
+#include "zscript/characters/char_diaz.zsc"
+#include "zscript/characters/char_hernandez.zsc"
+#include "zscript/characters/char_mel.zsc"
+
 // WEAPONS
 
 // CORE

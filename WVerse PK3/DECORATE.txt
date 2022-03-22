@@ -46,3 +46,34 @@ ACTOR WeaponSelectMemory : Inventory
 	// 321 = 919M
 	Inventory.MaxAmount 999
 }
+
+Actor MeleeButtonActor : CustomInventory
+{
+	-INVBAR
+	+UNDROPPABLE
+	Inventory.Amount 1
+	Inventory.MaxAmount 1
+	States
+	{
+	Use:
+		TNT1 A 0 A_JumpIfInventory("IsMel",1,"MelMeleeButton")
+		Fail
+	MelMeleeButton:
+		TNT1 A 0 A_JumpIfInventory("MeleeSelected",1,"MelMeleeSwitch")
+		TNT1 A 0 A_SelectWeapon("MelBareKnuckle")
+		Fail
+	MelChargeSwitch:
+		TNT1 A 0 A_SelectWeapon("MelChargeStyle")
+		Fail
+	MelMeleeSwitch:
+		TNT1 A 0 A_JumpIfInventory("WeaponSelectMemory",131,"MelSMGSwitch")
+		TNT1 A 0 A_JumpIfInventory("WeaponSelectMemory",121,"MelPistolSwitch")
+		Goto MelPistolSwitch
+	MelPistolSwitch:
+		TNT1 A 0 A_SelectWeapon("MelPistol")
+		TNT1 A 0 A_SelectWeapon("MelPistolA")
+		Fail
+	}
+}
+
+Actor MeleeSelected : Boolean {}

@@ -18,10 +18,6 @@ $playeralias	Mel      male  	*mediummelee		mel/smallmelee
 $playeralias	Mel   	  male  	*largemelee         mel/largemelee
 $playeralias	Mel   	  male  	*xlmelee			mel/largemelee
 
-$playeralias	Mel   	 male  		*maggrapple			maggrappleretro
-$playeralias	Mel   	 male  		*magsling			magslingretro
-$playeralias	Mel   	 male  		*magdrive			magdriveretro
-
 $random mel/pain100 { mel/pain1001 mel/pain1002 mel/pain1003 mel/pain1004 }
 mel/pain1001 "sounds/characters/mel/vo_mel_pain100-1.ogg"
 mel/pain1002 "sounds/characters/mel/vo_mel_pain100-2.ogg"
@@ -61,13 +57,15 @@ mel/jump01 "sounds/characters/mel/vo_mel_jump01.ogg"
 mel/jump02 "sounds/characters/mel/vo_mel_jump02.ogg"
 
 $random mel/land { mel/land1 mel/land2 mel/land3 }
-mel/land1 "sounds/characters/mel/vo_mel_land1.ogg"
-mel/land2 "sounds/characters/mel/vo_mel_land2.ogg"
-mel/land3 "sounds/characters/mel/vo_mel_land3.ogg"
+mel/land1 "sounds/characters/mel/vo_mel_land01.ogg"
+mel/land2 "sounds/characters/mel/vo_mel_land02.ogg"
+mel/land3 "sounds/characters/mel/vo_mel_land03.ogg"
 
 $random mel/usefail { mel/unf1 mel/unf2 }
 mel/unf1 "sounds/characters/mel/vo_mel_usefail1.ogg"
 mel/unf2 "sounds/characters/mel/vo_mel_usefail2.ogg"
+
+mel/landing "sounds/general/player/sfx_land01.ogg"
 
 //////////////////
 // Mel's Melee
