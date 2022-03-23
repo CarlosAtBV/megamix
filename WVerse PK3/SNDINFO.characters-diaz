@@ -1,44 +1,43 @@
-$playeralias	diaz	male	*crazydeath	diaz/deathhi
-$playeralias	diaz	male	*wimpydeath	diaz/deathlo
-$playeralias	diaz	male	*death		diaz/deathlo
-$playeralias	diaz	male	*xdeath		diaz/deathhi
-$playersound	diaz	male	*gibbed		diaz/deathhi
-$playersound	diaz	male	*pain100	diazp25
-$playersound	diaz	male	*pain75		diazp50
-$playersound	diaz	male	*pain50		diazp75
-$playersound	diaz	male	*pain25		diazp100
-$playersound   	diaz	male	*land       diazland
-$playersound	diaz	male	*grunt		diazoof
-$playersound	diaz	male	*usefail	dsnoway
-$playersound	diaz	male	*jump		diazjump
-$playeralias	diaz	male	*melee		diaz/melee
-$playeralias	diaz	male	*taunt		diaz/taunt
-$playeralias	diaz	male	*disint		diaz/disint
-$playeralias	diaz	male	*flamed		diaz/deathhi
-$playeralias	diaz	male	*falcon		diaz/falcon
-$playeralias	diaz	male	*paunch		diaz/paunch
-diaz/disint diazdist
+////////////////////////////
+// Diaz Player Sounds
+////////////////////////////
+
+$playeralias      Diaz      male      *pain100			diazp25
+$playeralias      Diaz      male      *pain75			diazp50
+$playeralias      Diaz      male      *pain50			diazp75
+$playeralias      Diaz      male      *pain25			diazp100
+$playeralias      Diaz      male      *death			diaz/deathlo
+$playeralias      Diaz      male      *xdeath			diaz/deathhi
+$playeralias      Diaz      male      *gibbed			diaz/deathhi
+$playeralias      Diaz      male      *disint			diaz/disint
+$playeralias      Diaz      male      *flamed			diaz/deathhi
+$playeralias      Diaz      male      *grunt			diazoof
+$playeralias      Diaz      male      *land       		general/landing
+$playeralias      Diaz      male      *jump				diazjump
+$playeralias      Diaz      male      *usefail			diazoff
+$playeralias      Diaz      male      *smallmelee		diaz/melee
+$playeralias      Diaz      male      *mediummelee		diaz/melee
+$playeralias      Diaz      male      *largemelee		diaz/melee
+$playeralias      Diaz      male      *xlmelee			diaz/melee
 $random diaz/deathlo { dzldth1 dzldth2 dzldth3 dzldth4 }
 dzldth1 diazldt1
 dzldth2 diazldt2
 dzldth3 diazldt3
 dzldth4 duazldt4
+
 $random diaz/deathhi { dzhdth1 dzhdth2 dzhdth3 }
 dzhdth1 diazhdt1
 dzhdth2 diazhdt2
 dzhdth3 diazhdt3
+
+diaz/disint diazdist
+
 $random diaz/melee { dzm1 dzm2 dzm3 }
 dzm1 dzmelee1
 dzm2 dzmelee2
 dzm6 dsjump
-$random diaz/falcon { dzfalcon1 dzfalcon2 dzfalcon3 }
-dzfalcon1 dzfalc1
-dzfalcon2 dzfalc2
-dzfalcon3 dzfalc3
-$random diaz/paunch { dzpaunch1 dzpaunch2 dzpaunch3 }
-dzpaunch1 dzfpch1
-dzpaunch2 dzfpch2
-dzpaunch3 dzfpch3
+
+$playeralias	diaz	male	*taunt		diaz/taunt
 $random diaz/taunt { dztaunt1 dztaunt2 dztaunt3 dztaunt4 dztaunt5 }
 dztaunt1 dztaunt1
 dztaunt2 dztaunt2

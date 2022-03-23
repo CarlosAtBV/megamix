@@ -3,11 +3,13 @@ gameinfo
 	PlayerClasses = "WVerse_DiazPlayer", "WVerse_HernandezPlayer", "WVerse_MelPlayer"
 }
 
+/*
 episode test
 {
-   name = "training"
+   name = "Training"
    key = "T"
 }
+*/
 
 clearskills
 

@@ -1,22 +1,22 @@
 ////////////////////////////
-// Mel (Retro) Player Sounds
+// Mel Player Sounds
 ////////////////////////////
 
-$playeralias	Mel      male  	*pain100			mel/pain100
-$playeralias	Mel      male  	*pain75				mel/pain75
-$playeralias	Mel      male  	*pain50				mel/pain50
-$playeralias	Mel      male  	*pain25				mel/pain25
-$playeralias	Mel	  male  	*death				mel/death
-$playeralias	Mel      male  	*xdeath				mel/xdeath
-$playeralias	Mel      male  	*gibbed				mel/xdeath
-$playeralias	Mel      male  	*grunt				mel/land
-$playeralias	Mel	  male  	*jump				mel/jump
-$playeralias    Mel	  male      *land				mel/landing
-$playeralias    Mel	  male      *usefail			mel/usefail
-$playeralias	Mel   	  male  	*smallmelee			mel/smallmelee
-$playeralias	Mel      male  	*mediummelee		mel/smallmelee
-$playeralias	Mel   	  male  	*largemelee         mel/largemelee
-$playeralias	Mel   	  male  	*xlmelee			mel/largemelee
+$playeralias      Mel      male      *pain100			mel/pain100
+$playeralias      Mel      male      *pain75			mel/pain75
+$playeralias      Mel      male      *pain50			mel/pain50
+$playeralias      Mel      male      *pain25			mel/pain25
+$playeralias      Mel      male      *death				mel/death
+$playeralias      Mel      male      *xdeath			mel/xdeath
+$playeralias      Mel      male      *gibbed			mel/xdeath
+$playeralias      Mel      male      *grunt				mel/land
+$playeralias      Mel      male      *jump				mel/jump
+$playeralias      Mel      male      *land				general/landing
+$playeralias      Mel      male      *usefail			mel/usefail
+$playeralias      Mel      male      *smallmelee		mel/smallmelee
+$playeralias      Mel      male      *mediummelee		mel/smallmelee
+$playeralias      Mel      male      *largemelee		mel/largemelee
+$playeralias      Mel      male      *xlmelee			mel/largemelee
 
 $random mel/pain100 { mel/pain1001 mel/pain1002 mel/pain1003 mel/pain1004 }
 mel/pain1001 "sounds/characters/mel/vo_mel_pain100-1.ogg"
@@ -48,7 +48,7 @@ mel/death02 "sounds/characters/mel/vo_mel_death_normal02.ogg"
 
 $random mel/xdeath { mel/xdeath01 mel/xdeath02 }
 mel/xdeath01 "sounds/characters/mel/vo_mel_death_xdeath01.ogg"
-mel/xdeath02 "sounds/characters/mel/vo_mel_death_xdeath01.ogg"
+mel/xdeath02 "sounds/characters/mel/vo_mel_death_xdeath02.ogg"
 $volume mel/xdeath 0.7
 
 
@@ -64,8 +64,6 @@ mel/land3 "sounds/characters/mel/vo_mel_land03.ogg"
 $random mel/usefail { mel/unf1 mel/unf2 }
 mel/unf1 "sounds/characters/mel/vo_mel_usefail1.ogg"
 mel/unf2 "sounds/characters/mel/vo_mel_usefail2.ogg"
-
-mel/landing "sounds/general/player/sfx_land01.ogg"
 
 //////////////////
 // Mel's Melee

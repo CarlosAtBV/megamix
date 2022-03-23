@@ -1,24 +1,25 @@
-$playersound	hernandez	male	*crazydeath	hdth1
-$playersound	hernandez	male	*wimpydeath	hdth1
-$playersound	hernandez	male	*death		hdth1
-$playersound	hernandez	male	*xdeath		hdth1
-$playersound	hernandez	male	*gibbed		hdth1
-$playersound	hernandez	male	*pain100	hp100
-$playersound	hernandez	male	*pain75		hp75
-$playersound	hernandez	male	*pain50		hp50
-$playersound	hernandez	male	*pain25		hp25
-$playersound	hernandez	male	*land       hland
-$playersound	hernandez	male	*grunt		hoof
-$playersound	hernandez	male	*usefail	dsnoway
-$playersound	hernandez	male	*jump		hjump
-$playeralias	hernandez	male	*melee		hernandez/melee
-$playeralias	hernandez	male	*psipain	hernandez/psipain
-$playeralias	hernandez	male	*disint		hernandez/disint
-$playeralias	hernandez	male	*flamed		misc/flamedeath
-$playeralias	hernandez	male	*breathe	hernandez/breathe
-$playeralias	hernandez	male	*taunt		hernandez/taunt
-$playeralias	hernandez	male	*falcon		hernandez/falcon
-$playeralias	hernandez	male	*paunch		hernandez/paunch
+////////////////////////////
+// Hernandez Player Sounds
+////////////////////////////
+
+$playeralias      Hernandez      male      *pain100			hp100
+$playeralias      Hernandez      male      *pain75			hp75
+$playeralias      Hernandez      male      *pain50			hp50
+$playeralias      Hernandez      male      *pain25			hp25
+$playeralias      Hernandez      male      *death			hdth1
+$playeralias      Hernandez      male      *xdeath			hdth1
+$playeralias      Hernandez      male      *gibbed			hdth1
+$playeralias      Hernandez      male      *disint			hernandez/disint
+$playeralias      Hernandez      male      *grunt			hoof
+$playeralias      Hernandez      male      *jump			hjump
+$playeralias      Hernandez      male      *land       		general/landing2
+$playeralias      Hernandez      male      *usefail			dsnoway
+$playeralias      Hernandez      male      *psipain			hernandez/psipain
+$playeralias      Hernandez      male      *breathe			hernandez/breathe
+$playeralias      Hernandez      male      *smallmelee		hernandez/melee
+$playeralias      Hernandez      male      *mediummelee		hernandez/melee
+$playeralias      Hernandez      male      *largemelee		hernandez/melee
+$playeralias      Hernandez      male      *xlmelee			hernandez/melee
 
 $random hernandez/melee { hzm1 hzm4 }
 hzm1 hmelee1
@@ -26,15 +27,9 @@ hzm4 hjump
 $random hernandez/psipain { null }
 hernandez/breathe hbrth1
 hernandez/disint hdisint
+
+$playeralias      Hernandez      male      *taunt			hernandez/taunt
 $random hernandez/taunt { hztaunt1 hztaunt2 hztaunt3 }
 hztaunt1 hztaunt1
 hztaunt2 hztaunt2
 hztaunt3 hztaunt3
-$random hernandez/falcon { hfalcon1 hfalcon2 hfalcon3 }
-hfalcon1 hfalcon1
-hfalcon2 hfalcon2
-hfalcon3 hfalcon3
-$random hernandez/paunch { hpaunch1 hpaunch2 hpaunch3 }
-hpaunch1 hpaunch1
-hpaunch2 hpaunch2
-hpaunch3 hpaunch3
