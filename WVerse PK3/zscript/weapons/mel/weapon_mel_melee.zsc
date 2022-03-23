@@ -1,0 +1,359 @@
+//===========================================================================
+//
+// Bare Knuckle (Mel's Melee Style)
+// (Adapted from TSP0.1.2e and the unreleased TSPX)
+//
+// by Cardboard Marty
+// Sprites by Cardboard Marty, Blox, Scuba Steve, Banjo Entertainment
+// 
+//
+//===========================================================================
+
+Class Weapon_Mel_Melee : WVerse_Weapon_Core
+{
+	Default
+	{
+		Inventory.PickupMessage "REPLACE THIS";
+		Obituary "%o came face to face with %k's iron fist.";
+		Weapon.Kickback 100;
+		Weapon.BobStyle "Alpha";
+		Weapon.BobSpeed 1.5;
+		Weapon.BobRangeY 1.0;
+		Weapon.BobRangeX 0.5;
+		Tag "Bare Knuckle";
+		
+		+WEAPON.WIMPY_WEAPON
+		+WEAPON.MELEEWEAPON
+		+WEAPON.NOALERT
+		+WEAPON.NOAUTOAIM
+		+WEAPON.NOAUTOFIRE
+		+NOEXTREMEDEATH
+		+INVENTORY.UNDROPPABLE
+	}
+
+	int combo_mach;
+	int combo_alt;
+	int combo_primary;
+	
+	int combo_held;
+	
+	States
+	{
+		Spawn:
+			TNT1 A -1;
+			Loop;
+		Deselect:
+			TNT1 A 0 A_TakeInventory("MeleeSelected", 1);
+			"----" A 0
+			{
+				invoker.combo_primary = 0;
+				invoker.combo_alt = 0;
+				invoker.combo_mach = 0;
+			}
+			TNT1 A 0 A_JumpIfInventory("ComboCoolDown", 1, "ComboDeselect");
+			TNT1 A 0 A_TakeInventory("ComboCoolDown", 99);
+			311D ABCD 1;
+			TNT1 A 3;
+		DeselectLoop:
+			TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAA 0  A_Lower;
+			TNT1 A 1 A_Lower;
+			Loop;
+		ComboDeselect:
+			TNT1 A 0 A_Lower;
+			Loop;
+		Select:
+			TNT1 A 0 A_GiveInventory("MeleeSelected", 1);
+			TNT1 A 0 A_WeaponOffset(0,32);
+			TNT1 A 4;
+			311U ABCD 1;
+			311G A 1 A_Raise;
+			Loop;
+		Ready:
+			//TNT1 A 0 A_JumpIfInventory("TraitPressed",1,"SPTraitStart")
+			311G A 1 A_WeaponReady;
+			Loop;
+
+	// Punch!
+		Fire:
+			"----" A 0
+			{
+				//A_JumpIfInventory("TraitPressed",1,"SPTrait")
+				
+				switch(invoker.combo_mach)
+				{
+					default: return resolveState("AfterMelee"); break; 		//made so you can't Melbow again after the Rapid Fire Finish
+					case 3: return resolveState("RapidFireFinish"); break;		//K-K-P-P-P-P
+					case 2: return resolveState("CrossDuo"); break; 		//K-K-P-P-P
+					case 1: return resolveState("CrossPunch"); break; 		//K-K-P-P
+					case 0: break;
+				}
+				
+				if ( invoker.combo_alt >= 2 )
+				{
+					return resolveState("KnifeHand"); //K-K-P
+				}
+				
+				switch(invoker.combo_primary)
+				{
+					default: return resolveState("ScorpionTailFinisher"); break; 	//P-P-P-P
+					case 2: return resolveState("LeftOverhead"); break; 	//P-P-P
+					case 1: return resolveState("RightHook"); break; 		//P-P
+					case 0: break;
+				}
+				
+				//Just go to punch lmao
+				return resolveState("Punch1");
+			}
+			Stop;
+
+	// P DEFAULT		
+		Punch1:	
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			3111 ABCD 1;
+			3111 E 1 A_WVerse_Melee(10, 70, "BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_primary++;
+			}
+			3111 FGJK 1 A_WeaponReady;
+			TNT1 A 12 A_WeaponReady;
+			Goto AfterMelee;
+		
+	// P-P
+		RightHook:
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			3112 ABC 1;
+			3112 D 1 A_WVerse_Melee(12, 70 ,"BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_primary++;
+			}
+			3112 E 1;
+			3112 H 1 A_WeaponReady;
+			TNT1 A 13 A_WeaponReady;
+			Goto AfterMelee;
+
+	// P-P-P
+		LeftOverhead:
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			TNT1 A 0 A_StartSound("*smallmelee", CHAN_VOICE);
+			3113 ABC 1 ;
+			3113 E 1 A_WVerse_Melee(12, 70, "BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_primary++;
+			}
+			3113 F 1;
+			TNT1 A 11 A_WeaponReady;
+			TNT1 A 3;
+			Goto AfterMelee;
+	
+	// P-P-P-P
+		ScorpionTailFinisher:
+			TNT1 A 5 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
+			3114 ABC 1;
+			3114 D 1 A_WVerse_Melee(20, 90, "UppercutMeleePuff", 0, 8, 16, 45, 45);
+			3114 E 2;
+			3114 DCBA 1;
+			TNT1 A 8;
+			Goto AfterMelee;
+		
+	//K-K-P
+		KnifeHand:
+			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
+			3115 ABC 1 ;
+			3115 D 1 A_WVerse_Melee(15, 70, "BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_mach++;
+			}
+			3115 EFG 1;
+			3115 HI 1 A_WeaponReady;
+			TNT1 A 7 A_WeaponReady;
+			TNT1 A 5;
+			Goto AfterMelee;
+	
+	//K-K-P-P
+		CrossPunch:
+			TNT1 A 2 A_StartSound("*smallmelee", CHAN_VOICE);
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			311O AB 1;
+			311O C 1 A_WVerse_Melee(12, 70, "BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_primary = 0;
+				invoker.combo_mach++;
+			}
+			Goto CrossPunchEnd;
+
+		CrossPunchEnd:
+			311O CBA 1 A_WeaponReady;
+			TNT1 A 0 A_Jump(256,"CrossEnder"); //CrossPunch and CrossDuo have the same ending frames, merged into a single state for readability)
+	
+	// K-K-P-P-P
+		CrossDuo:
+			TNT1 A 1;
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			311P AB 1;
+			311P C 1 A_WVerse_Melee(12, 70, "BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_primary = 0;
+				invoker.combo_mach++;
+			}
+			311P CBA 1 A_WeaponReady;
+		CrossEnder:
+			TNT1 A 12 A_WeaponReady;
+			TNT1 A 3;
+			Goto AfterMelee;
+		
+	//K-K-P-P-P-P
+		RapidFireFinish:
+			TNT1 A 1 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
+			TNT1 A 0 A_Recoil(-3);
+			311Q ABC 1 ;
+			311Q D 5 A_WVerse_Melee(30, 90, "StrongMeleePuff");
+			311Q EFG 1;
+			"----" A 0
+			{
+				invoker.combo_primary = 0;
+				invoker.combo_mach = 99;
+			}
+			TNT1 A 0 A_GiveInventory("ComboCoolDown", 1);
+			TNT1 AAAAAA 1 A_WeaponReady;
+			"----" A 0
+			{
+				invoker.combo_alt = 0;
+			}
+			TNT1 A 6;
+			Goto AfterMelee;
+		
+	// Kicks
+		AltFire:
+			"----" A 0
+			{
+				switch(invoker.combo_alt)
+				{
+					case 4: return resolveState("StingrayFinisher"); break; //P-P-P-K-K
+					case 3:
+					case 2: return resolveState("ViperFinisher"); break; 			//K-K-K
+					case 1: return resolveState("UpperKick"); break;				//K-K
+				}
+				
+				switch(invoker.combo_primary)
+				{
+					case 3: return resolveState("AzureKnee"); break; 				//P-P-P-K
+					case 2: return resolveState("StreetSweeperFinisher"); break;	//P-P-K
+				}
+				
+				//Just go to kick lmao
+				return resolveState("DefaultKick");
+			}
+			Stop;
+		
+	// K DEFAULT
+		DefaultKick:
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			311K ABC 1;
+			311K D 1 A_WVerse_Melee(12, 90, "BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_alt++;
+			}
+			311K E 1;
+			311K FGH 1 A_WeaponReady;
+			TNT1 A 12 A_WeaponReady;
+			Goto AfterMelee;
+		
+	// K-K
+		UpperKick:
+			TNT1 A 3;
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			TNT1 A 0 A_StartSound("*smallmelee", CHAN_VOICE);
+			311L ABC 1;
+			311L D 2 A_WVerse_Melee(12, 90, "BasicMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_alt++;
+			}
+			311L E 1;
+			311L F 1 A_WeaponReady;
+			TNT1 A 9 A_WeaponReady;
+			TNT1 A 3;
+			Goto AfterMelee;
+		
+	// K-K-K
+		ViperFinisher:
+			TNT1 A 3 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 0 Thrustthing(angle*256/360,9, 0, 0);
+			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
+			TNT1 A 0 A_SetPitch(pitch - 0.5);
+			TNT1 A 0 A_SetAngle(angle + (frandom(-0.3,0.3)));
+			311R AB 1;
+			311R C 2 A_WVerse_Melee(48, 90, "StrongMeleePuff", 0, 16, 8);
+			311R DEF 1;
+			TNT1 A 6;
+			Goto AfterMelee;
+		
+	//P-P-K
+		StreetSweeperFinisher:
+			TNT1 A 4 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
+			311J ABC 1;
+			311J D 1 A_WVerse_Melee(48,90,"StrongMeleePuff");
+			311J EFGHI 1
+			{
+				A_SetAngle(angle + 2.0, SPF_INTERPOLATE);
+			}
+			TNT1 A 5;
+			Goto AfterMelee;
+		
+	// P-P-P-K
+		AzureKnee:
+			TNT1 A 2;
+			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
+			TNT1 A 0 A_Recoil(-5);
+			311N ABC 1;
+			311N D 3 A_WVerse_Melee(24,90,"StrongMeleePuff");
+			"----" A 0
+			{
+				invoker.combo_alt += 4;
+			}			
+			311N CB 1;
+			311N A 1 A_WeaponReady;
+			TNT1 A 8 A_WeaponReady;
+			TNT1 A 6;
+			Goto AfterMelee;
+	
+	//P-P-P-K-K
+		StingRayFinisher:
+			TNT1 A 3 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
+			311M ABCD 1;
+			311M E 1 A_WVerse_Melee(48,90,"StrongMeleePuff");
+			311M FGHI 1;
+			//TNT1 A 0 A_GiveInventory("TSPPistolCombo", 1)//allows you to do the pistol combo (we'll get back to this)
+			"----" A 0
+			{
+				invoker.combo_primary = 0;
+				invoker.combo_alt = 0;
+				invoker.combo_mach = 0;
+			}
+			Goto AfterMelee;
+
+		AfterMelee:
+			"----" A 0
+			{
+				invoker.combo_primary = 0;
+				invoker.combo_alt = 0;
+				invoker.combo_mach = 0;
+			}
+			//TNT1 A 0 A_TakeInventory("TSPPistolCombo", 99);
+			TNT1 A 0 A_TakeInventory("ComboCoolDown", 99);
+			311D EDCBA 1;
+			311G A 1;
+			Goto Ready;
+	}
+}

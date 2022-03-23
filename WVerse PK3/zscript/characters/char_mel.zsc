@@ -5,15 +5,14 @@ Class WVerse_MelPlayer : DoomPlayer
 		Player.ViewHeight 47;
 		Player.AttackZOffset 20;
 		Player.JumpZ 9.0;
-		//Player.StartItem "MeleeButtonActor", 1;
+		Player.StartItem "MeleeButtonActor", 1;
 		Player.StartItem "IsMel", 1;	
+		Player.StartItem "Weapon_Mel_Melee";
 		Player.SoundClass "Mel";
 		Player.DisplayName "Crosswell";
 		//Player.Face "MC1";
 		//Player.Portrait "CSS_MELP";
-		//Player.WeaponSlot 1, "MelChargeStyle", "MelBareKnuckle";
-		//Player.WeaponSlot 2, "MelPistol", "MelPistolA", "MelPistolB", "MelPistolC";
-		//Player.WeaponSlot 3, "MelSMG", "MelSMGA", "MelSMGB";
+		Player.WeaponSlot 1, "Weapon_Mel_Melee";
 		Species "Player";
 		+THRUSPECIES
 		+PLAYERPAWN.NOTHRUSTWHENINVUL

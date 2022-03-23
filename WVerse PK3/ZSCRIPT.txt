@@ -18,7 +18,9 @@ Default
 #include "zscript/characters/char_mel.zsc"
 
 // WEAPONS
-#include "zscript/weapons/diaz/weapon_diazmelee.zsc"
+#include "zscript/weapons/diaz/weapon_diaz_melee.zsc"
+
+#include "zscript/weapons/mel/weapon_mel_melee.zsc"
 
 // CORE
 #include "zscript/core/fx.zsc"
