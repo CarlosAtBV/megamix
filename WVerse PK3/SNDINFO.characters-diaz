@@ -2,19 +2,19 @@
 // Diaz Player Sounds
 ////////////////////////////
 
-$playeralias      Diaz      male      *pain100			diazp25
-$playeralias      Diaz      male      *pain75			diazp50
-$playeralias      Diaz      male      *pain50			diazp75
-$playeralias      Diaz      male      *pain25			diazp100
+$playersound      Diaz      male      *pain100			diazp25
+$playersound      Diaz      male      *pain75			diazp50
+$playersound      Diaz      male      *pain50			diazp75
+$playersound      Diaz      male      *pain25			diazp100
 $playeralias      Diaz      male      *death			diaz/deathlo
 $playeralias      Diaz      male      *xdeath			diaz/deathhi
-$playeralias      Diaz      male      *gibbed			diaz/deathhi
+$playersound      Diaz      male      *gibbed			diaz/deathhi
 $playeralias      Diaz      male      *disint			diaz/disint
 $playeralias      Diaz      male      *flamed			diaz/deathhi
-$playeralias      Diaz      male      *grunt			diazoof
+$playersound      Diaz      male      *grunt			diazoof
 $playeralias      Diaz      male      *land       		general/landing
-$playeralias      Diaz      male      *jump				diazjump
-$playeralias      Diaz      male      *usefail			diazoff
+$playersound      Diaz      male      *jump				diazjump
+$playersound      Diaz      male      *usefail			diazoof
 $playeralias      Diaz      male      *smallmelee		diaz/melee
 $playeralias      Diaz      male      *mediummelee		diaz/melee
 $playeralias      Diaz      male      *largemelee		diaz/melee
