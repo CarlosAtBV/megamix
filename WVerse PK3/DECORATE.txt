@@ -1,3 +1,5 @@
+#include "actors/weapons/weapon_universalmelee.txt" // UNIVERSAL MELEE STUFF (PUFFS)
+
 ///////////////////////////////////////////////////////
 
 Actor Boolean : Inventory

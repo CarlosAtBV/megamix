@@ -3,15 +3,15 @@ Class WVerse_DiazPlayer : DoomPlayer
 	Default
 	{
 		Player.ViewHeight 47;
-		Player.AttackZOffset 20;
-		Player.JumpZ 9.0;
-		//Player.StartItem "MeleeButtonActor", 1;
-		Player.StartItem "IsDiaz", 1;	
+		Player.AttackZOffset 17;
+		Player.StartItem "MeleeButtonActor", 1;
+		Player.StartItem "IsDiaz", 1;
+		Player.StartItem "Weapon_Diaz_Melee";
 		Player.SoundClass "Diaz";
 		Player.DisplayName "Diaz";
 		//Player.Face "MC1";
 		//Player.Portrait "CSS_MELP";
-		//Player.WeaponSlot 1, "MelChargeStyle", "MelBareKnuckle";
+		Player.WeaponSlot 1, "Weapon_Diaz_Melee";
 		//Player.WeaponSlot 2, "MelPistol", "MelPistolA", "MelPistolB", "MelPistolC";
 		//Player.WeaponSlot 3, "MelSMG", "MelSMGA", "MelSMGB";
 		Species "Player";
