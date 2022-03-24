@@ -18,6 +18,7 @@ skill WVerseCasual
 	PlayerClassName = "Hernandez", "Mostly Harmless"
 	PlayerClassName = "Diaz", "One-Armed Boxer"
 	PlayerClassName = "Crosswell", "Easy Peasy"
+		Name = "Casual"
 		SpawnFilter = Baby
 		ACSReturn = 0
 		Key = "1"
@@ -31,6 +32,7 @@ skill WVerseNormal
 	PlayerClassName = "Hernandez", "Snow Crash"
 	PlayerClassName = "Diaz", "Assault on Precinct 13"
 	PlayerClassName = "Crosswell", "Bring It On"
+		Name = "Normal"
 		DefaultSkill
 		SpawnFilter = Normal
 		ACSReturn = 1
@@ -42,6 +44,7 @@ skill WVerseHard
 	PlayerClassName = "Hernandez", "Neuromancer"
 	PlayerClassName = "Diaz", "On Deadly Ground"
 	PlayerClassName = "Crosswell", "High Intensity"
+		Name = "Hard"
 		SpawnFilter = Hard
 		ACSReturn = 2
 		Key = "3"
@@ -52,6 +55,7 @@ skill WVerseExtreme
 	PlayerClassName = "Hernandez", "Blade Runner"
 	PlayerClassName = "Diaz", "Reservoir Dogs"
 	PlayerClassName = "Crosswell", "Blood N' Bone"
+		Name = "Extreme"
 		SpawnFilter = Hard
 		ACSReturn = 3
 		Key = "4"
