@@ -1,0 +1,42 @@
+[enu default]
+
+WVERSEMNU_MENU_STARTGAME = "\c[WVerseStartGreen]New Game";
+WVERSEMNU_MENU_OPTIONS = "\c[WVERSEYeller]Options";
+WVERSEMNU_MENU_CODEX = "\c[WVERSEBlue]Codex";
+WVERSEMNU_MENU_CODEX_SUB = "Explore the RCPA's database.";
+WVERSEMNU_MENU_LOAD = "\c[WVERSELoadGreen]Load Game";
+WVERSEMNU_MENU_SAVE = "\c[WVERSELoadGreen]Save Game";
+WVERSEMNU_MENU_QUIT = "\c[WVERSERed]Shut Down";
+
+WVERSEMNU_MNU_MODIFIERS = "\c[WVERSEModGold]Modifiers";
+WVERSEMNU_MNU_MODIFIERS_SUB = "Tweak gameplay options and parameters.";
+WVERSEMNU_MNU_CONFIG = "\c[WVERSEOrange]Config";
+WVERSEMNU_MNU_CONFIG_SUB = "Configure key bindings.";
+WVERSEMNU_MNU_VIDEO = "\c[WVERSEVideoBlue]Video";
+WVERSEMNU_MNU_VIDEO_SUB = "Adjust video options and set screen resolution.";
+WVERSEMNU_MNU_VIDEO_HEAD = "\c[WVERSEVideoBlue]VIDEO SETTINGS";
+WVERSEMNU_MNU_AUDIO = "\c[WVERSEAudioGreen]Audio";
+WVERSEMNU_MNU_AUDIO_SUB = "Adjust audio settings.";
+WVERSEMNU_MNU_AUDIO_HEAD = "\c[WVERSEAudioGreen]AUDIO SETTINGS";
+WVERSEMNU_MNU_OTHERMODOPTIONS = "\c[WVERSEOtherModsPurple]Other Mod Options";
+WVERSEMNU_MNU_GZDOOMMENU = "\c[WVERSEGZDoomOptionsGray]GZDOOM Options";
+
+// DIFFICULTY SETTINGS
+MNU_CHOOSESKILL		= "\c[WVerse_Yellow]DIFFICULTY SELECT";
+
+WVERSEDIF_MEL_CASUAL = "\c[WVerse_Blue]Rope a Dope";
+WVERSEDIF_MEL_NORMAL = "\c[WVerse_Green]Never Back Down";
+WVERSEDIF_MEL_HARD = "\c[WVerse_YellowOrange]Undisputed";
+WVERSEDIF_MEL_EXTREME = "\c[WVerse_Red]Blood and Bone";
+
+WVERSEDIF_ALL_CASUAL = "\c[WVerse_Blue]Casual";
+WVERSEDIF_ALL_NORMAL = "\c[WVerse_Green]Normal";
+WVERSEDIF_ALL_HARD = "\c[WVerse_YellowOrange]Hard";
+WVERSEDIF_ALL_EXTREME = "\c[WVerse_Red]Extreme";
+WVERSEDIF_ALL_ULTIMATE = "\c[WVerse_Purple]Game of Death";
+
+WVERSEMNU_MELMUGOVERRIDE = "HUD Face Override";
+WVERSEMNU_MELMUGOVERRIDE_SUB = "Who do you want to be today, who do you want to be?";
+
+WVERSEMNU_MELEESTART = "Melee-Only Start";
+WVERSEMNU_MELEESTART_SUB = "Start with only your melee weapon. Slappers only!";

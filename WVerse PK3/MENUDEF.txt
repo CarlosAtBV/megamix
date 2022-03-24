@@ -1,6 +1,43 @@
 DEFAULTLISTMENU
 {
-	Font "dmcs.bmf", "Green"
-	Selector "M_SKULL", -22, 3
-	Linespacing 15
+	Font "BigUpper", "Green" //Font "MENUFNT", "DarkGreen"
+	Selector "M_SKULL1", -34, -8
+	Linespacing 20
+}
+
+LISTMENU "MainMenu"
+{
+	Size Clean
+	//Position 90, 15
+	Linespacing 20
+	AnimatedTransition
+			
+		TextItem "$WVERSEMNU_MENU_STARTGAME",	"n",	"PlayerclassMenu"
+		TextItem "SP_CONF",		"o",	"OptionsMenu"
+		TextItem "SP_RTHS",		"h",	"ReadThisMenu"
+		TextItem "SP_LOAD",		"l",	"LoadGameMenu"
+		TextItem "SP_SAVE",		"s",	"SaveGameMenu"
+		TextItem "SP_QUIT",		"q",	"QuitMenu"
+
+	Font "BigUpper"
+	StaticText 90, 195, "$VERSION"
+}
+
+ListMenu "PlayerclassMenu"
+{
+	NetgameMessage "$NEWGAME"
+	
+	StaticPatch 103, 39, "SP_CSLT"
+	Position 32, 18
+	PlayerDisplay 226, 51, "20 00 00", "80 00 40"
+	AnimatedTransition
+}
+
+ListMenu "SkillMenu"
+{
+	StaticText 54, 38, "$MNU_CHOOSESKILL"
+	Position 16, 15
+	Linespacing 20
+	AnimatedTransition
+
 }

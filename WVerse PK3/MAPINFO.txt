@@ -17,8 +17,8 @@ skill WVerseCasual
 {
 	PlayerClassName = "Hernandez", "Mostly Harmless"
 	PlayerClassName = "Diaz", "Kung Fu Panda"
-	PlayerClassName = "Crosswell", "Rope a Dope"
-		Name = "Casual"
+	PlayerClassName = "Crosswell", "$WVERSEDIF_MEL_CASUAL"
+		Name = "$WVERSEDIF_ALL_CASUAL"
 		SpawnFilter = Baby
 		ACSReturn = 0
 		Key = "1"
@@ -31,8 +31,8 @@ skill WVerseNormal
 {
 	PlayerClassName = "Hernandez", "Snow Crash"
 	PlayerClassName = "Diaz", "One Armed Boxer"
-	PlayerClassName = "Crosswell", "Never Back Down"
-		Name = "Normal"
+	PlayerClassName = "Crosswell", "$WVERSEDIF_MEL_NORMAL"
+		Name = "$WVERSEDIF_ALL_NORMAL"
 		DefaultSkill
 		SpawnFilter = Normal
 		ACSReturn = 1
@@ -43,8 +43,8 @@ skill WVerseHard
 {
 	PlayerClassName = "Hernandez", "Neuromancer"
 	PlayerClassName = "Diaz", "Fist of Fury"
-	PlayerClassName = "Crosswell", "Undisputed"
-		Name = "Hard"
+	PlayerClassName = "Crosswell", "$WVERSEDIF_MEL_HARD"
+		Name = "$WVERSEDIF_ALL_HARD"
 		SpawnFilter = Hard
 		ACSReturn = 2
 		Key = "3"
@@ -54,8 +54,8 @@ skill WVerseExtreme
 {
 	PlayerClassName = "Hernandez", "Blade Runner"
 	PlayerClassName = "Diaz", "The Big Boss"
-	PlayerClassName = "Crosswell", "Blood and Bone"
-		Name = "Extreme"
+	PlayerClassName = "Crosswell", "$WVERSEDIF_MEL_EXTREME"
+		Name = "$WVERSEDIF_ALL_EXTREME"
 		SpawnFilter = Hard
 		ACSReturn = 3
 		Key = "4"
@@ -66,7 +66,7 @@ skill WVerseExtreme
 
 skill WVerseUltimate
 {
-	name = "Game of Death"
+	name = "$WVERSEDIF_ALL_ULTIMATE"
 		SpawnFilter = Hard
 		ACSReturn = 3
 		Key = "4"
