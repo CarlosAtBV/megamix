@@ -1,0 +1,6 @@
+DEFAULTLISTMENU
+{
+	Font "wverse_bigfont", "Green"
+	Selector "M_SKULL", -22, 3
+	Linespacing 15
+}
