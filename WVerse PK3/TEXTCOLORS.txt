@@ -30,6 +30,20 @@ WVerse_Yellow
 	#735024  #ddd05c  151  256
 }
 
+WVerse_BrightYellow // Menu Selected
+{
+	#000000  #000000    0  1
+	#906f00  #906f00    2  150
+	#cda900  #fffc00  151  256
+}
+
+
+WVerse_Gold
+{
+	#000000  #000000    0  1
+	#ab8016  #cea02d    2  127
+	#d5a93b  #e2bf69  128  256
+}
 
 // ORANGE
 WVerse_Orange
@@ -204,12 +218,7 @@ WVerseHudYellow // OUTLINE
 	#735024  #e6c77a  128  256
 }
 
-WVerseGold // OUTLINE
-{
-	#000000  #000000    0  1
-	#ab8016  #cea02d    2  127
-	#d5a93b  #e2bf69  128  256
-}
+
 WVerseHealthGold // OUTLINE
 {
 	#000000  #000000    0  1

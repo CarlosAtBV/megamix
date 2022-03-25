@@ -6,13 +6,13 @@ gameinfo
 	NoRandomPlayerClass = True
 }
 
-/*
+
 episode test
 {
    name = "Training"
    key = "T"
 }
-*/
+
 
 clearskills
 

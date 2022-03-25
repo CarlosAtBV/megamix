@@ -1,6 +1,6 @@
 DEFAULTLISTMENU
 {
-	Font "BigUpper", "WVerse_Yellow"
+	Font "BigUpper", WVerse_Gold, WVerse_BrightYellow
 	Selector "WVSELA01", -12, -6
 	Linespacing 27
 }
@@ -10,7 +10,8 @@ LISTMENU "MainMenu"
 	Size Clean
 	Position 25, 32
 	Linespacing 27
-	StaticPatch  12, 24,	"MENUBAR1"
+	//StaticPatch  12, 24,	"MENUBAR1"
+	StaticPatch  -1, 24,	"MENUBAR1"
 	AnimatedTransition
 			
 		TextItem "$WVERSEMNU_MENU_STARTGAME",	"n",	"PlayerclassMenu"
@@ -26,8 +27,9 @@ LISTMENU "MainMenu"
 		TextItem "$WVERSEMNU_MENU_QUIT",		"q",	"QuitMenu"
 		StaticPatch  25,  179,	"MENU06"
 
-	Font "TinyFont"
-	StaticText 90, 195, "$VERSION"
+	//StaticPatch  15, 191,	"MENUBARV"
+	//Font "TinyFont"
+	//StaticText 28, 197, "$VERSION"
 }
 
 ListMenu "PlayerclassMenu"
@@ -44,13 +46,22 @@ ListMenu "PlayerclassMenu"
 	AnimatedTransition
 }
 
+ListMenu "EpisodeMenu"
+{
+	NetgameMessage "$NEWGAME"
+	Font "BigUpper", "WVerse_Yellow"
+	Position 25, 32
+	Linespacing 27
+	AnimatedTransition
+}
+
 ListMenu "SkillMenu"
 {
 	Size Clean
 	//StaticText 54, 13, "$MNU_CHOOSESKILL"
 	//Font "TinyFont"
 	//StaticText 54, 24, "THIS IS WHERE YOU CHOOSE A SKILL DUMMY!"	
-	StaticPatch  12, 24,	"MENUBAR1"
+	StaticPatch  -1, 24,	"MENUBAR2"
 	Position 25, 32
 	Linespacing 27
 	
