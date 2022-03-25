@@ -10,7 +10,7 @@ Class WVerse_DiazPlayer : DoomPlayer
 		Player.SoundClass "Diaz";
 		Player.DisplayName "Diaz";
 		//Player.Face "MC1";
-		//Player.Portrait "CSS_MELP";
+		Player.Portrait "DIAZPORT";
 		Player.WeaponSlot 1, "Weapon_Diaz_Melee";
 		//Player.WeaponSlot 2, "MelPistol", "MelPistolA", "MelPistolB", "MelPistolC";
 		//Player.WeaponSlot 3, "MelSMG", "MelSMGA", "MelSMGB";

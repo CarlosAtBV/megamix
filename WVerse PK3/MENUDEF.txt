@@ -1,43 +1,65 @@
 DEFAULTLISTMENU
 {
-	Font "BigUpper", "Green" //Font "MENUFNT", "DarkGreen"
-	Selector "M_SKULL1", -34, -8
-	Linespacing 20
+	Font "BigUpper", "WVerse_Yellow"
+	Selector "WVSELA01", -12, -6
+	Linespacing 27
 }
 
 LISTMENU "MainMenu"
 {
 	Size Clean
-	//Position 90, 15
-	Linespacing 20
+	Position 25, 32
+	Linespacing 27
+	StaticPatch  12, 24,	"MENUBAR1"
 	AnimatedTransition
 			
 		TextItem "$WVERSEMNU_MENU_STARTGAME",	"n",	"PlayerclassMenu"
-		TextItem "SP_CONF",		"o",	"OptionsMenu"
-		TextItem "SP_RTHS",		"h",	"ReadThisMenu"
-		TextItem "SP_LOAD",		"l",	"LoadGameMenu"
-		TextItem "SP_SAVE",		"s",	"SaveGameMenu"
-		TextItem "SP_QUIT",		"q",	"QuitMenu"
+		StaticPatch  25,  44,	"MENU01"
+		TextItem "$WVERSEMNU_MENU_OPTIONS",		"o",	"OptionsMenu"
+		StaticPatch  25,  71, 	"MENU02"
+		TextItem "$WVERSEMNU_MENU_CODEX",		"h",	"ReadThisMenu"
+		StaticPatch  25,  98, 	"MENU03"
+		TextItem "$WVERSEMNU_MENU_LOAD",		"l",	"LoadGameMenu"
+		StaticPatch  25,  125, 	"MENU04"
+		TextItem "$WVERSEMNU_MENU_SAVE",		"s",	"SaveGameMenu"
+		StaticPatch  25,  152,	"MENU05"
+		TextItem "$WVERSEMNU_MENU_QUIT",		"q",	"QuitMenu"
+		StaticPatch  25,  179,	"MENU06"
 
-	Font "BigUpper"
+	Font "TinyFont"
 	StaticText 90, 195, "$VERSION"
 }
 
 ListMenu "PlayerclassMenu"
 {
+	Size Clean
 	NetgameMessage "$NEWGAME"
-	
-	StaticPatch 103, 39, "SP_CSLT"
-	Position 32, 18
-	PlayerDisplay 226, 51, "20 00 00", "80 00 40"
+	PlayerDisplay 120, 0, "20 00 00", "80 00 40"
+	//StaticText 54, 13, "$MNU_CHOOSECLASS"
+	//Font "TinyFont"
+	//StaticText 54, 24, "$MNU_CLASSDESC"	
+	Font "BigUpper", "WVerse_Yellow"
+	Position 25, 32
+	Linespacing 27
 	AnimatedTransition
 }
 
 ListMenu "SkillMenu"
 {
-	StaticText 54, 38, "$MNU_CHOOSESKILL"
-	Position 16, 15
-	Linespacing 20
+	Size Clean
+	//StaticText 54, 13, "$MNU_CHOOSESKILL"
+	//Font "TinyFont"
+	//StaticText 54, 24, "THIS IS WHERE YOU CHOOSE A SKILL DUMMY!"	
+	StaticPatch  12, 24,	"MENUBAR1"
+	Position 25, 32
+	Linespacing 27
+	
+		StaticPatch  26,  44,	"SKILL01"
+		StaticPatch  26,  71, 	"SKILL02"
+		StaticPatch  26,  98, 	"SKILL03"
+		StaticPatch  26,  125, 	"SKILL04"
+		StaticPatch  26,  152,	"SKILL05"
+		
 	AnimatedTransition
 
 }

@@ -11,7 +11,7 @@ Class WVerse_MelPlayer : DoomPlayer
 		Player.SoundClass "Mel";
 		Player.DisplayName "Crosswell";
 		//Player.Face "MC1";
-		//Player.Portrait "CSS_MELP";
+		Player.Portrait "MELCPORT";
 		Player.WeaponSlot 1, "Weapon_Mel_Melee";
 		Species "Player";
 		+THRUSPECIES

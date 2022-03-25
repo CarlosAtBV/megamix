@@ -1,4 +1,4 @@
-//
+// PURPLE
 WVerse_Purple
 {
 	#000000  #000000    0  1
@@ -58,6 +58,16 @@ WVerse_LightRed
 	#000000  #000000    0  1
 	#460b0b  #c72424	2  256
 }
+
+// GREYSCALE
+WVerse_White
+{
+	#000000  #000000    0  1
+	#5f5f5f  #d9d9d9    2  150
+	#f8f8f8  #ffffff  151  256
+}
+
+
 
 //MENU (MAIN)
 WVerseStartGreen // OUTLINE
@@ -152,13 +162,6 @@ Console:
 Flat:
 	#CCCCCC
 }
-WVerseWhite
-{
-	#000000  #000000    0  1
-	#5f5f5f  #d9d9d9    2  127  // DARKEST PART OF THE GRADIENT
-	#f8f8f8  #ffffff  128  256
-}
-
 
 
 WVerseHudRed

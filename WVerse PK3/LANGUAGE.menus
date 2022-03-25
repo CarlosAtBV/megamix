@@ -1,12 +1,12 @@
 [enu default]
 
-WVERSEMNU_MENU_STARTGAME = "\c[WVerseStartGreen]New Game";
-WVERSEMNU_MENU_OPTIONS = "\c[WVERSEYeller]Options";
-WVERSEMNU_MENU_CODEX = "\c[WVERSEBlue]Codex";
+WVERSEMNU_MENU_STARTGAME = "\c[WVerse_Green]New Game";
+WVERSEMNU_MENU_OPTIONS = "\c[WVerse_Yellow]Options";
+WVERSEMNU_MENU_CODEX = "\c[WVerse_Blue]Codex";
 WVERSEMNU_MENU_CODEX_SUB = "Explore the RCPA's database.";
 WVERSEMNU_MENU_LOAD = "\c[WVERSELoadGreen]Load Game";
 WVERSEMNU_MENU_SAVE = "\c[WVERSELoadGreen]Save Game";
-WVERSEMNU_MENU_QUIT = "\c[WVERSERed]Shut Down";
+WVERSEMNU_MENU_QUIT = "\c[WVerse_Red]Shut Down";
 
 WVERSEMNU_MNU_MODIFIERS = "\c[WVERSEModGold]Modifiers";
 WVERSEMNU_MNU_MODIFIERS_SUB = "Tweak gameplay options and parameters.";
