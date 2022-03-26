@@ -137,7 +137,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 	// P-P-P
 		LeftOverhead:
 			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
-			TNT1 A 0 A_StartSound("*smallmelee", CHAN_VOICE);
+			TNT1 A 0 A_StartSound("*mediummelee", CHAN_VOICE);
 			3113 ABC 1 ;
 			3113 E 1 A_WVerse_Melee(12, 70, "BasicMeleePuff");
 			"----" A 0
@@ -151,7 +151,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 	
 	// P-P-P-P
 		ScorpionTailFinisher:
-			TNT1 A 5 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 5 A_StartSound("*largemelee", CHAN_VOICE);
 			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
 			3114 ABC 1;
 			3114 D 1 A_WVerse_Melee(20, 90, "UppercutMeleePuff", 0, 8, 16, 45, 45);
@@ -162,6 +162,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 		
 	//K-K-P
 		KnifeHand:
+			TNT1 A 0 A_StartSound("*mediummelee", CHAN_VOICE);
 			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
 			3115 ABC 1 ;
 			3115 D 1 A_WVerse_Melee(15, 70, "BasicMeleePuff");
@@ -194,7 +195,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 	
 	// K-K-P-P-P
 		CrossDuo:
-			TNT1 A 1;
+			TNT1 A 1 A_StartSound("*smallmelee", CHAN_VOICE);
 			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
 			311P AB 1;
 			311P C 1 A_WVerse_Melee(12, 70, "BasicMeleePuff");
@@ -211,7 +212,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 		
 	//K-K-P-P-P-P
 		RapidFireFinish:
-			TNT1 A 1 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 1 A_StartSound("*largemelee", CHAN_VOICE);
 			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
 			TNT1 A 0 A_Recoil(-3);
 			311Q ABC 1 ;
@@ -256,6 +257,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 		
 	// K DEFAULT
 		DefaultKick:
+			TNT1 A 0 A_StartSound("*smallmelee", CHAN_VOICE);
 			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
 			311K ABC 1;
 			311K D 1 A_WVerse_Melee(12, 90, "BasicMeleePuff");
@@ -272,7 +274,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 		UpperKick:
 			TNT1 A 3;
 			TNT1 A 0 A_StartSound("basicmelee/miss", 5);
-			TNT1 A 0 A_StartSound("*smallmelee", CHAN_VOICE);
+			TNT1 A 0 A_StartSound("*mediummelee", CHAN_VOICE);
 			311L ABC 1;
 			311L D 2 A_WVerse_Melee(12, 90, "BasicMeleePuff");
 			"----" A 0
@@ -287,7 +289,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 		
 	// K-K-K
 		ViperFinisher:
-			TNT1 A 3 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 3 A_StartSound("*largemelee", CHAN_VOICE);
 			TNT1 A 0 Thrustthing(angle*256/360,9, 0, 0);
 			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
 			TNT1 A 0 A_SetPitch(pitch - 0.5);
@@ -300,7 +302,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 		
 	//P-P-K
 		StreetSweeperFinisher:
-			TNT1 A 4 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 5 A_StartSound("*largemelee", CHAN_VOICE);
 			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
 			311J ABC 1;
 			311J D 1 A_WVerse_Melee(48,90,"StrongMeleePuff");
@@ -331,7 +333,7 @@ Class Weapon_Mel_Melee : WVerse_Weapon_Core
 	
 	//P-P-P-K-K
 		StingRayFinisher:
-			TNT1 A 3 A_StartSound("*strongmelee", CHAN_VOICE);
+			TNT1 A 3 A_StartSound("*largemelee", CHAN_VOICE);
 			TNT1 A 0 A_StartSound("strongmelee/miss", 5);
 			311M ABCD 1;
 			311M E 1 A_WVerse_Melee(48,90,"StrongMeleePuff");
