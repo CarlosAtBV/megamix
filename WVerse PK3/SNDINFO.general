@@ -1,9 +1,9 @@
 // MENU
 menu/activate "sounds/general/menu/ui_menu_activate.ogg" // ESM_Holographic_SlideTransition_Robotic_Technology_Hi_Tech_Game_Tone_Science_UFO_Space_Processed_Menu from "Hybrid Game Sounds"
-menu/backup "sounds/general/menu/ui_menu_backup.ogg" // RDTH_Synth_Hit_03_Fm9 from "Raw Deep Tech House"
+menu/backup "sounds/general/menu/ui_menu_backup.ogg" // KASTLE_synth_stab_01_C from "Kastle's Garage and 2-Step Pack"
 menu/prompt "sounds/general/menu/ui_menu_prompt.ogg" // AU_LFS_chord_one_shot_brass_Dm9 from "Lush Future Soul 5"
 menu/change "sounds/general/menu/ui_menu_change.ogg"  // ad4_typewriter_04_r02 from "Antidrum 4"
-menu/choose "sounds/general/menu/ui_menu_choose.ogg"  // KASTLE_synth_stab_01_C from "Kastle's Garage and 2-Step Pack"
+menu/choose "sounds/general/menu/ui_menu_choose.ogg"  // RDTH_Synth_Hit_03_Fm9 from "Raw Deep Tech House"
 menu/cursor "sounds/general/menu/ui_menu_cursor.ogg" // gh_chst_clone_B from "Garage House"
 menu/invalid "sounds/general/menu/ui_menu_invalid.ogg" // PMVM_Cm_Chord_27 from "Vorm - Techno"
 
