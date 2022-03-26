@@ -7,6 +7,8 @@ gameinfo
 	
 	CursorPic = "WVCURS01"
 	MenuBackButton = "MENUBACK"
+	
+	NoMergePickupMsg = True
 }
 
 /*
