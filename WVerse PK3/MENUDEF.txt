@@ -46,6 +46,7 @@ ListMenu "PlayerclassMenu"
 	AnimatedTransition
 }
 
+/*
 ListMenu "EpisodeMenu"
 {
 	NetgameMessage "$NEWGAME"
@@ -54,22 +55,24 @@ ListMenu "EpisodeMenu"
 	Linespacing 27
 	AnimatedTransition
 }
+*/
 
 ListMenu "SkillMenu"
 {
 	Size Clean
+	Selector "WVSELA01", -12, -3
 	//StaticText 54, 13, "$MNU_CHOOSESKILL"
 	//Font "TinyFont"
 	//StaticText 54, 24, "THIS IS WHERE YOU CHOOSE A SKILL DUMMY!"	
 	StaticPatch  -1, 24,	"MENUBAR2"
 	Position 25, 32
-	Linespacing 27
+	Linespacing 36
 	
-		StaticPatch  26,  44,	"SKILL01"
-		StaticPatch  26,  71, 	"SKILL02"
-		StaticPatch  26,  98, 	"SKILL03"
-		StaticPatch  26,  125, 	"SKILL04"
-		StaticPatch  26,  152,	"SKILL05"
+		StaticPatch  25,  45,	"SKILL01"
+		StaticPatch  25,  81, 	"SKILL02"
+		StaticPatch  25,  117, 	"SKILL03"
+		StaticPatch  25,  153, 	"SKILL04"
+		StaticPatch  25,  189,	"SKILL05"
 		
 	AnimatedTransition
 

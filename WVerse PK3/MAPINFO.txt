@@ -6,13 +6,13 @@ gameinfo
 	NoRandomPlayerClass = True
 }
 
-
+/*
 episode test
 {
    name = "Training"
    key = "T"
 }
-
+*/
 
 clearskills
 
@@ -50,7 +50,7 @@ skill WVerseHard
 	PlayerClassName = "Diaz", "Fist of Fury"
 	PlayerClassName = "Crosswell", "Undisputed"
 		Name = "Hard"
-		TextColor = WVerse_YellowOrange
+		TextColor = WVerse_HardOrange
 		SpawnFilter = Hard
 		ACSReturn = 2
 		Key = "3"
@@ -74,7 +74,7 @@ skill WVerseExtreme
 skill WVerseUltimate
 {
 		Name = "Game of Death" //All classes have the same ultimate skill name
-		TextColor = WVerse_Purple
+		TextColor = WVerse_UltimatePurple
 		SpawnFilter = Hard
 		ACSReturn = 3
 		Key = "4"

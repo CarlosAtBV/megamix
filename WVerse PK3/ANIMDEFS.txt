@@ -1,6 +1,6 @@
 // Menu Cursor
 texture WVSELA01
-    pic WVSELA01 tics 40
+    pic WVSELA01 tics 60
     pic WVSELA02 tics 2
     pic WVSELA03 tics 2
     pic WVSELA04 tics 10

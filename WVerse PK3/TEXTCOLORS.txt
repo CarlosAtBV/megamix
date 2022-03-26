@@ -6,6 +6,13 @@ WVerse_Purple
 	#43176b  #8834d8  151  256
 }
 
+WVerse_UltimatePurple
+{
+	#000000  #000000    0  1
+	#4c0d67  #4c0d67    2  150
+	#8200b8  #b200fc  151  256
+}
+
 // BLUE
 WVerse_Blue
 {
@@ -51,6 +58,13 @@ WVerse_Orange
 	#000000  #000000	0  1
 	#382500  #382500	2  150
 	#a06900  #f09e00	151  256
+}
+
+WVerse_HardOrange // Hard Difficulty
+{
+	#000000  #000000	0  1
+	#6f4e0d  #6f4e0d	2  150
+	#b88300  #fcb400	151  256
 }
 
 WVerse_YellowOrange

@@ -1,3 +1,23 @@
+// MENU
+menu/activate "sounds/general/menu/ui_menu_activate.ogg" // ESM_Holographic_SlideTransition_Robotic_Technology_Hi_Tech_Game_Tone_Science_UFO_Space_Processed_Menu from "Hybrid Game Sounds"
+menu/backup "sounds/general/menu/ui_menu_backup.ogg" // RDTH_Synth_Hit_03_Fm9 from "Raw Deep Tech House"
+menu/prompt "sounds/general/menu/ui_menu_prompt.ogg" // AU_LFS_chord_one_shot_brass_Dm9 from "Lush Future Soul 5"
+menu/change "sounds/general/menu/ui_menu_change.ogg"  // ad4_typewriter_04_r02 from "Antidrum 4"
+menu/choose "sounds/general/menu/ui_menu_choose.ogg"  // KASTLE_synth_stab_01_C from "Kastle's Garage and 2-Step Pack"
+menu/cursor "sounds/general/menu/ui_menu_cursor.ogg" // gh_chst_clone_B from "Garage House"
+menu/invalid "sounds/general/menu/ui_menu_invalid.ogg" // PMVM_Cm_Chord_27 from "Vorm - Techno"
+
+menu/quit1 "sounds/general/menu/ui_menu_quit.ogg" // odh_stab_labrynth from "Organic Deep House"
+menu/quit2 "sounds/general/menu/ui_menu_quit.ogg" // odh_stab_labrynth from "Organic Deep House"
+
+// INTERMISSION
+intermission/tick "sounds/general/menu/ui_intermission_tick.ogg" // TA_USC_TECH_STAB_WOODY_C from "Ultimate Stabs and Chords"
+$alias                intermission/cooptotal        menu/cursor
+$alias                intermission/nextstage        menu/cursor
+$alias                intermission/paststats        menu/cursor
+$alias                intermission/pastcoopstats    menu/cursor
+$alias                intermission/pastdmstats      menu/cursor
+
 misc/meleekill "sounds/weapon fx/meleekill.ogg"
 
 general/landing		"sounds/general/player/sfx_land01.ogg"
