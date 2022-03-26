@@ -20,6 +20,17 @@ $alias                intermission/pastdmstats      menu/cursor
 
 misc/meleekill "sounds/weapon fx/meleekill.ogg"
 
-general/landing		"sounds/general/player/sfx_land01.ogg"
-general/landing2	"sounds/general/player/sfx_land02.ogg"
-general/landing3	"sounds/general/player/sfx_land03.ogg" // From Wolfenstein: The New Order
+// GENERAL
+$random general/land { general/land01 general/land02 general/land03 general/land04 general/land05 }
+general/land01 "sounds/general/player/sfx_general_land01.ogg" 
+general/land02 "sounds/general/player/sfx_general_land02.ogg" 
+general/land03 "sounds/general/player/sfx_general_land03.ogg" 
+general/land04 "sounds/general/player/sfx_general_land04.ogg" 
+general/land05 "sounds/general/player/sfx_general_land05.ogg"
+
+$random general/landb { general/landb01 general/landb02 general/landb03 general/landb04 general/landb05 }
+general/landb01 "sounds/general/player/sfx_general_landb01.ogg" 
+general/landb02 "sounds/general/player/sfx_general_landb02.ogg" 
+general/landb03 "sounds/general/player/sfx_general_landb03.ogg" 
+general/landb04 "sounds/general/player/sfx_general_landb04.ogg" 
+general/landb05 "sounds/general/player/sfx_general_landb05.ogg" 

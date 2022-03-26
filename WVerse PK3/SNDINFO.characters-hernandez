@@ -12,7 +12,7 @@ $playersound      Hernandez      male      *gibbed			hdth1
 $playeralias      Hernandez      male      *disint			hernandez/disint
 $playersound      Hernandez      male      *grunt			hoof
 $playersound      Hernandez      male      *jump			hjump
-$playeralias      Hernandez      male      *land       		general/landing2
+$playeralias      Hernandez      male      *land       		general/landb
 $playersound      Hernandez      male      *usefail			hoof
 $playeralias      Hernandez      male      *psipain			hernandez/psipain
 $playeralias      Hernandez      male      *breathe			hernandez/breathe

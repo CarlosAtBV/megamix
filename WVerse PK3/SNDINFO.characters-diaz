@@ -12,7 +12,7 @@ $playersound      Diaz      male      *gibbed			diaz/deathhi
 $playeralias      Diaz      male      *disint			diaz/disint
 $playeralias      Diaz      male      *flamed			diaz/deathhi
 $playersound      Diaz      male      *grunt			diazoof
-$playeralias      Diaz      male      *land       		general/landing
+$playeralias      Diaz      male      *land       		general/land // Defined in SNDINFO
 $playersound      Diaz      male      *jump				diazjump
 $playersound      Diaz      male      *usefail			diazoof
 $playeralias      Diaz      male      *smallmelee		diaz/melee

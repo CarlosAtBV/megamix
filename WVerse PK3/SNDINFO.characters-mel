@@ -14,7 +14,7 @@ $playeralias	Mel      male  	*xdeath				mel/xdeath
 $playeralias	Mel      male  	*gibbed				mel/xdeath
 $playeralias	Mel      male  	*grunt				mel/land
 $playeralias	Mel	     male  	*jump				mel/jump
-$playeralias    Mel	     male   *land				general/landing3
+$playeralias    Mel	     male   *land				general/land
 $playeralias    Mel	     male   *usefail			mel/usefail
 $playeralias	Mel   	 male  	*smallmelee			mel/smallmelee
 $playeralias	Mel   	 male  	*mediummelee		mel/mediummelee
