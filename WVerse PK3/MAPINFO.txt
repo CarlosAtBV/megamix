@@ -3,7 +3,7 @@ gameinfo
 	dimcolor = "#000000"
 	dimamount = "0.5"
 	PlayerClasses = "WVerse_DiazPlayer", "WVerse_HernandezPlayer", "WVerse_MelPlayer"
-	NoRandomPlayerClass = True
+	//NoRandomPlayerClass = True
 	
 	CursorPic = "WVCURS01"
 	MenuBackButton = "MENUBACK"

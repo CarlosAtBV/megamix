@@ -1,6 +1,6 @@
 DEFAULTLISTMENU
 {
-	Font "BigUpper", WVerse_Gold, WVerse_BrightYellow
+	Font "BigUpper", WVerse_Yellow, WVerse_BrightYellow
 	Selector "WVSELA01", -12, -6
 	Linespacing 27
 }
@@ -36,19 +36,24 @@ ListMenu "PlayerclassMenu"
 {
 	Size Clean
 	NetgameMessage "$NEWGAME"
-	PlayerDisplay 120, 0, "20 00 00", "80 00 40"
-	//StaticText 54, 13, "$MNU_CHOOSECLASS"
-	//Font "TinyFont"
-	//StaticText 54, 24, "$MNU_CLASSDESC"	
-	Font "BigUpper", "WVerse_Yellow"
+	PlayerDisplay 150, 25, "20 00 00", "80 00 40"
+	StaticPatch  -1, 24,	"MENUBAR3"
+	StaticPatch  150, 144,	"MENUCHAR"
 	Position 25, 32
 	Linespacing 27
+	
+		StaticPatch  25,  45,	"DIAZSUB"
+		StaticPatch  25,  72, 	"HERNSUB"
+		StaticPatch  25,  98, 	"MELCSUB"
+		StaticPatch  25,  126, 	"RANDSUB"
+		
 	AnimatedTransition
 }
 
 /*
 ListMenu "EpisodeMenu"
 {
+	Size Clean
 	NetgameMessage "$NEWGAME"
 	Font "BigUpper", "WVerse_Yellow"
 	Position 25, 32
