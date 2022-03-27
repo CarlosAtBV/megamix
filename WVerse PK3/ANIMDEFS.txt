@@ -18,8 +18,8 @@ texture WVSELA01
 	pic WVSELA02 tics 2
 	
 // Character Select Overlay
-texture MENUCHAR
-    pic MENUCHAR tics 60
+texture MENUCHA0
+    pic MENUCHA0 tics 60
     pic MENUCHA1 tics 2
     pic MENUCHA2 tics 2
     pic MENUCHA3 tics 10

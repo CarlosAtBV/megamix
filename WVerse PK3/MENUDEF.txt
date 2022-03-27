@@ -38,7 +38,7 @@ ListMenu "PlayerclassMenu"
 	NetgameMessage "$NEWGAME"
 	PlayerDisplay 150, 25, "20 00 00", "80 00 40"
 	StaticPatch  -1, 24,	"MENUBAR3"
-	StaticPatch  150, 144,	"MENUCHAR"
+	StaticPatch  150, 144,	"MENUCHA0"
 	Position 25, 32
 	Linespacing 27
 	
