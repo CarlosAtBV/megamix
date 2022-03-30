@@ -44,7 +44,7 @@ ListMenu "PlayerclassMenu"
 	
 		StaticPatch  25,  45,	"DIAZSUB"
 		StaticPatch  25,  72, 	"HERNSUB"
-		StaticPatch  25,  98, 	"MELCSUB"
+		StaticPatch  25,  99, 	"MELCSUB"
 		StaticPatch  25,  126, 	"RANDSUB"
 		
 	AnimatedTransition
