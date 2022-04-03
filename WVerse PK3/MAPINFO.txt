@@ -81,7 +81,7 @@ skill WVerseUltimate
 		Name = "Game of Death" //All classes have the same ultimate skill name
 		TextColor = WVerse_UltimatePurple
 		SpawnFilter = Hard
-		ACSReturn = 3
+		ACSReturn = 4
 		Key = "5"
 		Aggressiveness = 1.0
 		DamageFactor = 2.0
