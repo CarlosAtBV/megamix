@@ -1,10 +1,10 @@
 @echo off
 color F
 
-set NAME=bv-rcpa-dev
+set NAME=bv-megamix-dev
 set /p TYPE="Would you like to build a pk3 or pk7? (default pk3): " % = %
 
-cd WVERSE PK3
+cd Megamix PK3
 
 if (%TYPE%) == (pk7) (goto PK7) else (goto PK3)
 

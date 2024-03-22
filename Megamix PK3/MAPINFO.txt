@@ -1,7 +1,7 @@
 gameinfo
 {
-	dimcolor = "#000000"
-	dimamount = "0.5"
+	dimcolor = "#221410"
+	dimamount = "1"
 	PlayerClasses = "WVerse_DiazPlayer", "WVerse_HernandezPlayer", "WVerse_MelPlayer"
 	//NoRandomPlayerClass = True
 	
