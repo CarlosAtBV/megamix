@@ -4,7 +4,7 @@ gameinfo
 	dimamount = "0.8"
 	bluramount = "0.8"
 	titlepage = "titlepic"
-	PlayerClasses = "WVerse_DiazPlayer", "WVerse_HernandezPlayer", "WVerse_MelPlayer"
+	PlayerClasses = "Megamix_DiazPlayer", "Megamix_HernandezPlayer", "Megamix_MelPlayer"
 	//NoRandomPlayerClass = True
 	
 	CursorPic = "WVCURS01"
@@ -23,13 +23,13 @@ episode test
 
 clearskills
 
-skill WVerseCasual
+skill MegamixCasual
 {
 	PlayerClassName = "Hernandez", "Mostly Harmless"
 	PlayerClassName = "Diaz", "Kung Fu Panda"
 	PlayerClassName = "Crosswell", "Rope A Dope"
 		Name = "Casual"
-		TextColor = WVerse_Blue
+		TextColor = Megamix_Blue
 		SpawnFilter = Baby
 		ACSReturn = 0
 		Key = "1"
@@ -38,38 +38,38 @@ skill WVerseCasual
 		MonsterHealth = 0.5
 }
 
-skill WVerseNormal
+skill MegamixNormal
 {
 	PlayerClassName = "Hernandez", "Snow Crash"
 	PlayerClassName = "Diaz", "One Armed Boxer"
 	PlayerClassName = "Crosswell", "Never Back Down"
 		Name = "Normal"
-		TextColor = WVerse_Green
+		TextColor = Megamix_Green
 		DefaultSkill
 		SpawnFilter = Normal
 		ACSReturn = 1
 		Key = "2"
 }
 
-skill WVerseHard
+skill MegamixHard
 {
 	PlayerClassName = "Hernandez", "Neuromancer"
 	PlayerClassName = "Diaz", "Fist of Fury"
 	PlayerClassName = "Crosswell", "Undisputed"
 		Name = "Hard"
-		TextColor = WVerse_HardOrange
+		TextColor = Megamix_HardOrange
 		SpawnFilter = Hard
 		ACSReturn = 2
 		Key = "3"
 }
 
-skill WVerseExtreme
+skill MegamixExtreme
 {
 	PlayerClassName = "Hernandez", "Blade Runner"
 	PlayerClassName = "Diaz", "The Big Boss"
 	PlayerClassName = "Crosswell", "Blood and Bone"
 		Name = "Extreme"
-		TextColor = WVerse_Red
+		TextColor = Megamix_Red
 		SpawnFilter = Hard
 		ACSReturn = 3
 		Key = "4"
@@ -78,10 +78,10 @@ skill WVerseExtreme
 		MonsterHealth =  1.5
 }
 
-skill WVerseUltimate
+skill MegamixUltimate
 {
 		Name = "Game of Death" //All classes have the same ultimate skill name
-		TextColor = WVerse_UltimatePurple
+		TextColor = Megamix_UltimatePurple
 		SpawnFilter = Hard
 		ACSReturn = 4
 		Key = "5"

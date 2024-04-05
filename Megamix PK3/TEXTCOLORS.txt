@@ -1,12 +1,12 @@
 // PURPLE
-WVerse_Purple
+Megamix_Purple
 {
 	#000000  #000000    0  1
 	#3b1460  #3b1460    2  150
 	#43176b  #8834d8  151  256
 }
 
-WVerse_UltimatePurple
+Megamix_UltimatePurple
 {
 	#000000  #000000    0  1
 	#4c0d67  #4c0d67    2  150
@@ -14,7 +14,7 @@ WVerse_UltimatePurple
 }
 
 // BLUE
-WVerse_Blue
+Megamix_Blue
 {
 	#000000  #000000	0  1
 	#001b38  #001b38	2  150
@@ -22,7 +22,7 @@ WVerse_Blue
 }
 
 // GREEN
-WVerse_Green
+Megamix_Green
 {
 	#000000  #000000	0  1
 	#143800  #143800	2  150
@@ -30,14 +30,14 @@ WVerse_Green
 }
 
 // YELLOW
-WVerse_Yellow
+Megamix_Yellow
 {
 	#000000  #000000    0  1
 	#68431e  #68431e    2  150
 	#735024  #ddd05c  151  256
 }
 
-WVerse_BrightYellow // Menu Selected
+Megamix_BrightYellow // Menu Selected
 {
 	#000000  #000000    0  1
 	#906f00  #906f00    2  150
@@ -45,7 +45,7 @@ WVerse_BrightYellow // Menu Selected
 }
 
 
-WVerse_Gold
+Megamix_Gold
 {
 	#000000  #000000    0  1
 	#ab8016  #cea02d    2  127
@@ -53,42 +53,42 @@ WVerse_Gold
 }
 
 // ORANGE
-WVerse_Orange
+Megamix_Orange
 {
 	#000000  #000000	0  1
 	#382500  #382500	2  150
 	#a06900  #f09e00	151  256
 }
 
-WVerse_HardOrange // Hard Difficulty
+Megamix_HardOrange // Hard Difficulty
 {
 	#000000  #000000	0  1
 	#6f4e0d  #6f4e0d	2  150
 	#b88300  #fcb400	151  256
 }
 
-WVerse_YellowOrange
+Megamix_YellowOrange
 {
 	#000000  #000000	0  1
 	#7C2009  #FFB03A	2  256
 }
 
 // RED
-WVerse_Red
+Megamix_Red
 {
 	#000000  #000000	0  1
 	#380000  #380000	2  150
 	#a00000  #f00000	151  256
 }
 
-WVerse_LightRed
+Megamix_LightRed
 {
 	#000000  #000000    0  1
 	#460b0b  #c72424	2  256
 }
 
 // GREYSCALE
-WVerse_White
+Megamix_White
 {
 	#000000  #000000    0  1
 	#5f5f5f  #d9d9d9    2  150
@@ -98,21 +98,21 @@ WVerse_White
 
 
 //MENU (MAIN)
-WVerseStartGreen // OUTLINE
+MegamixStartGreen // OUTLINE
 {
 	#000000  #000000    0  1
 	#396649  #396649    2  127
 	#48714c  #d6d562  128  256
 }
 
-WVerseMenuGreen // OUTLINE
+MegamixMenuGreen // OUTLINE
 {
 	#000000  #000000    0  1    // BLACK OUTLINE
 	#1b485b  #1b485b  2  127
 	#205563  #34c597  128  255
 }
 
-WVerseLoadGreen // OUTLINE
+MegamixLoadGreen // OUTLINE
 {
 	#000000  #000000    0  1
 	#1e3925  #1e3925    2  127
@@ -120,14 +120,14 @@ WVerseLoadGreen // OUTLINE
 }
 
 //MENU (GAME MODES)
-WVerseStandardGrad // OUTLINE
+MegamixStandardGrad // OUTLINE
 {
 	#000000  #000000    0  1
 	#34701d  #34701d    2  127
 	#448118  #b4d94d  128  256
 }
 
-WVerseBHGrad // OUTLINE
+MegamixBHGrad // OUTLINE
 {
 	#000000  #000000    0  1
 	#60003c  #60003c    2  127
@@ -135,28 +135,28 @@ WVerseBHGrad // OUTLINE
 }
 
 // MENU (OPTIONS)
-WVerseModGold // OUTLINE
+MegamixModGold // OUTLINE
 {
 	#000000  #000000    0  1
 	#7f5f28  #7f5f28    2  127
 	#9e8538  #f9f5b3  128  256
 }
 
-WVerseVideoBlue // OUTLINE
+MegamixVideoBlue // OUTLINE
 {
 	#000000  #000000    0  1
 	#257fa9  #257fa9   2  127
 	#3289b0  #aae3ef 128  256
 }
 
-WVerseAudioGreen // OUTLINE
+MegamixAudioGreen // OUTLINE
 {
 	#000000  #000000    0  1
 	#1a3d21  #1a3d21    2  127
 	#1a4622  #b7c756  128  256
 }
 
-WVerseGZDoomOptionsGray // OUTLINE
+MegamixGZDoomOptionsGray // OUTLINE
 {
 	#000000  #000000    0  1
 	#262626  #262626    2  127
@@ -164,14 +164,14 @@ WVerseGZDoomOptionsGray // OUTLINE
 }
 
 //MENU (DIFFICULTY)
-WVerseSkillBlue // OUTLINE
+MegamixSkillBlue // OUTLINE
 {
 	#000000  #000000    0  1
 	#1c4768  #1c4768    2  127
 	#27577c  #b6dfff	128  256
 }
 
-WVerseModGold // OUTLINE
+MegamixModGold // OUTLINE
 {
 	#000000  #000000    0  1
 	#7f5f28  #7f5f28    2  127
@@ -179,7 +179,7 @@ WVerseModGold // OUTLINE
 }
 
 
-WVerseGray // OUTLINE
+MegamixGray // OUTLINE
 {
 	#000000  #000000    0  1    // BLACK OUTLINE
 	#5a5a5a  #5a5a5a    2  127  // DARKEST PART OF THE GRADIENT
@@ -192,40 +192,40 @@ Flat:
 }
 
 
-WVerseHudRed
+MegamixHudRed
 {
 	#000000  #000000    0  1
 	#3F0000  #FF0000    2  256
 }
 
-WVerseBlue // OUTLINE
+MegamixBlue // OUTLINE
 {
 	#000000  #000000    0  1
 	#1e3b69  #1e3b69    2  127
 	#244273  #5d8ede  128  256
 }
-WVerseHealthBlue // OUTLINE
+MegamixHealthBlue // OUTLINE
 {
 	#000000  #000000    0  1
 	#004c5e  #007490    2  127
 	#007f9d  #53cfed  128  256
 }
-WVerseVantaBlack
+MegamixVantaBlack
 {
 	#000000  #000000
 }
-WVerseLimeGreen 
+MegamixLimeGreen 
 {
 	#172702  #B9DE7F
 }
-WVerseLimeGreen1 // OUTLINE
+MegamixLimeGreen1 // OUTLINE
 {
 	#000000  #000000    0  1
 	#172702  #B9DE7F   2  256
 }
 
 
-WVerseHudYellow // OUTLINE
+MegamixHudYellow // OUTLINE
 {
 	#000000  #000000    0  1
 	#68431e  #68431e    2  127
@@ -233,13 +233,13 @@ WVerseHudYellow // OUTLINE
 }
 
 
-WVerseHealthGold // OUTLINE
+MegamixHealthGold // OUTLINE
 {
 	#000000  #000000    0  1
 	#732B00  #FFFF73    2  256
 }
 
-WVerseShieldOrange // OUTLINE
+MegamixShieldOrange // OUTLINE
 {
 	#000000  #000000    0  1
 	#b25f04  #ffd381    2  256

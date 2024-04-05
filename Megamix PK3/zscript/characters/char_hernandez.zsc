@@ -1,4 +1,4 @@
-Class WVerse_HernandezPlayer : DoomPlayer
+Class Megamix_HernandezPlayer : DoomPlayer
 {
 	Default
 	{

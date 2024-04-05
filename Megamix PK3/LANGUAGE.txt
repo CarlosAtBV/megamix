@@ -90,7 +90,7 @@ PD_ALLKEYS = "You need all the keys";
 SECRETMESSAGE = "\ccYou've discovered a\c- \cksecret area\c-\cc!\c-";
 
 //Menu Junk
-MNU_CHOOSECLASS		= "\c[WVerse_Yellow]CHARACTER SELECT";
+MNU_CHOOSECLASS		= "\c[Megamix_Yellow]CHARACTER SELECT";
 MNU_CLASSDESC		= "BECOME POWERFUL. SAVE THE WORLD.";
 TSPCustomControls = "\c[TSPYELLER]CUSTOMIZE CONTROLS\c-";
 TSPMouseOptions = "\c[TSPYELLER]MOUSE OPTIONS\c-";
@@ -163,4 +163,4 @@ STARTUP3 = "Chat with us at \cdhttps://www.bluevertigo.org/discord";
 STARTUP4 = "\c[Sapphire]LET THE HUNT BEGIN.";
 
 //VERSION
-VERSION = "v\c[WVerse_Green]0\c-.\c[WVerse_Green]0\c- - \c[WVerse_Yellow]Internal Test Build";
+VERSION = "v\c[Megamix_Green]0\c-.\c[Megamix_Green]0\c- - \c[Megamix_Yellow]Internal Test Build";

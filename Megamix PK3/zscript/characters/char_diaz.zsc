@@ -1,4 +1,4 @@
-Class WVerse_DiazPlayer : DoomPlayer
+Class Megamix_DiazPlayer : DoomPlayer
 {
 	Default
 	{

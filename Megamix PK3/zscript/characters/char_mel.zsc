@@ -1,4 +1,4 @@
-Class WVerse_MelPlayer : DoomPlayer
+Class Megamix_MelPlayer : DoomPlayer
 {
 	Default
 	{

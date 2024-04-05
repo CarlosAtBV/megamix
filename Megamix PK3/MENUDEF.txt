@@ -1,6 +1,6 @@
 DEFAULTLISTMENU
 {
-	Font "BigUpper", WVerse_Yellow, WVerse_BrightYellow
+	Font "BigUpper", Megamix_Yellow, Megamix_BrightYellow
 	Selector "WVSELA01", -12, -6
 	Linespacing 27
 }
@@ -14,17 +14,17 @@ LISTMENU "MainMenu"
 	StaticPatch  -1, 24,	"MENUBAR1"
 	AnimatedTransition
 			
-		TextItem "$WVERSEMNU_MENU_STARTGAME",	"n",	"PlayerclassMenu"
+		TextItem "$MEGAMIXMNU_MENU_STARTGAME",	"n",	"PlayerclassMenu"
 		StaticPatch  25,  45,	"MENU01"
-		TextItem "$WVERSEMNU_MENU_OPTIONS",		"o",	"OptionsMenu"
+		TextItem "$MEGAMIXMNU_MENU_OPTIONS",		"o",	"OptionsMenu"
 		StaticPatch  25,  72, 	"MENU02"
-		TextItem "$WVERSEMNU_MENU_CODEX",		"h",	"ReadThisMenu"
+		TextItem "$MEGAMIXMNU_MENU_CODEX",		"h",	"ReadThisMenu"
 		StaticPatch  25,  98, 	"MENU03"
-		TextItem "$WVERSEMNU_MENU_LOAD",		"l",	"LoadGameMenu"
+		TextItem "$MEGAMIXMNU_MENU_LOAD",		"l",	"LoadGameMenu"
 		StaticPatch  25,  126, 	"MENU04"
-		TextItem "$WVERSEMNU_MENU_SAVE",		"s",	"SaveGameMenu"
+		TextItem "$MEGAMIXMNU_MENU_SAVE",		"s",	"SaveGameMenu"
 		StaticPatch  25,  153,	"MENU05"
-		TextItem "$WVERSEMNU_MENU_QUIT",		"q",	"QuitMenu"
+		TextItem "$MEGAMIXMNU_MENU_QUIT",		"q",	"QuitMenu"
 		StaticPatch  25,  180,	"MENU06"
 
 	//StaticPatch  15, 191,	"MENUBARV"
@@ -55,7 +55,7 @@ ListMenu "EpisodeMenu"
 {
 	Size Clean
 	NetgameMessage "$NEWGAME"
-	Font "BigUpper", "WVerse_Yellow"
+	Font "BigUpper", "Megamix_Yellow"
 	Position 25, 32
 	Linespacing 27
 	AnimatedTransition

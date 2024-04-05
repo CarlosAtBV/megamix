@@ -9,7 +9,7 @@ alias BV_MSwitch "use MeleeButtonActor"
 defaultbind p BV_ShellDrop
 alias BV_ShellDrop "use DropCurrentShells" 
 
-addkeysection "WVerse Binds" "WVB"
+addkeysection "Megamix Binds" "WVB"
 addmenukey "Taunt" "BV_Taunt"
 addmenukey "Melee" "BV_Melee"
 addmenukey "Quick Switch Melee" "BV_MSwitch"
